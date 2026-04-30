@@ -1,7 +1,13 @@
-import React from "react";
+"use client";
+import { motion } from "motion/react";
+import NavLinks from "./NavLinks";
 
 const MainNav = () => {
-  return <div>MainNav</div>;
+  return (
+    <nav>
+      <NavLinks />
+    </nav>
+  );
 };
 
 export default MainNav;
