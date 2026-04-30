@@ -1,6 +1,5 @@
 import { Bangers } from "next/font/google";
 import "./globals.css";
-import Sidebar from "./Components/Sidebar";
 import MainNav from "./Components/MainNav";
 import Header from "./Components/Header";
 
@@ -24,11 +23,13 @@ export default function RootLayout({ children }) {
     >
       <body className="min-h-full flex flex-col">
         <div className="flex">
-          <div className="text-2xl hidden 2xl:flex justify-center items-center w-[285px] h-screen bg-accent">
-            Sidebar
+          <div className="text-2xl hidden 2xl:flex  w-[285px] h-screen bg-secondary">
+            <MainNav />
           </div>
-          <div className="w-full bg-black mx-auto max-w-[1130px]">
-            <div className="bg-pink-500">Header</div>
+          <div className="w-full bg-pink-50/10 px-[15px] mx-auto max-w-[1130px]">
+            <header>
+              <Header />
+            </header>
             <div>{children}</div>
           </div>
         </div>
