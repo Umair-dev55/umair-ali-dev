@@ -1,15 +1,9 @@
 import { Bangers } from "next/font/google";
 import "./globals.css";
 import Sidebar from "./Components/Sidebar";
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
+import MainNav from "./Components/MainNav";
+import Header from "./Components/Header";
 
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
 const bangers = Bangers({
   subsets: ["latin"],
   weight: ["400"], // Bangers only has 400 weight
@@ -29,8 +23,15 @@ export default function RootLayout({ children }) {
         h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        {/* <Sidebar /> */}
-        {children}
+        <div className="flex">
+          <div className="text-2xl hidden 2xl:flex justify-center items-center w-[285px] h-screen bg-accent">
+            Sidebar
+          </div>
+          <div className="w-full bg-black mx-auto max-w-[1130px]">
+            <div className="bg-pink-500">Header</div>
+            <div>{children}</div>
+          </div>
+        </div>
       </body>
     </html>
   );
