@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-const Home = () => {
+const Services = () => {
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -9,9 +9,9 @@ const Home = () => {
         transition: { delay: 1.4, duration: 0.4, ease: "easeIn" },
       }}
     >
-      Home
+      Services
     </motion.section>
   );
 };
 
-export default Home;
+export default Services;

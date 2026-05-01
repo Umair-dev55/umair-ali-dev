@@ -1,12 +1,14 @@
-import { Bangers } from "next/font/google";
+import { Cinzel } from "next/font/google";
 import "./globals.css";
 import MainNav from "./Components/MainNav";
 import Header from "./Components/Header";
+import PageTransition from "./Components/PageTransition";
+import RectangleTransition from "./Components/RectangleTransition";
 
-const bangers = Bangers({
+const cinzel = Cinzel({
   subsets: ["latin"],
-  weight: ["400"], // Bangers only has 400 weight
-  variable: "--font-bangers",
+  weight: ["400", "500", "600", "700", "800", "900"], // full range
+  variable: "--font-cinzel",
 });
 export const metadata = {
   title: "Create Next App",
@@ -18,21 +20,24 @@ export default function RootLayout({ children }) {
     <html
       lang="en"
       className={`
-         ${bangers.variable}
+         ${cinzel.variable}
         h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <div className="flex">
-          <div className="text-2xl hidden 2xl:flex  w-[285px] h-screen bg-secondary justify-center items-center ">
-            <MainNav />
+        <RectangleTransition />
+        <PageTransition>
+          <div className="flex">
+            <div className="text-[18px] hidden 2xl:flex  w-[285px] h-screen bg-secondary justify-center items-center ">
+              <MainNav />
+            </div>
+            <div className="w-full bg-pink-50/10 px-[15px] mx-auto max-w-[1130px] h-screen">
+              <header>
+                <Header />
+              </header>
+              <div>{children}</div>
+            </div>
           </div>
-          <div className="w-full bg-pink-50/10 px-[15px] mx-auto max-w-[1130px]">
-            <header>
-              <Header />
-            </header>
-            <div>{children}</div>
-          </div>
-        </div>
+        </PageTransition>
       </body>
     </html>
   );
