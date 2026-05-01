@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
     >
       <body className="min-h-full flex flex-col">
         <div className="flex">
-          <div className="text-2xl hidden 2xl:flex  w-[285px] h-screen bg-secondary">
+          <div className="text-2xl hidden 2xl:flex  w-[285px] h-screen bg-secondary justify-center items-center ">
             <MainNav />
           </div>
           <div className="w-full bg-pink-50/10 px-[15px] mx-auto max-w-[1130px]">

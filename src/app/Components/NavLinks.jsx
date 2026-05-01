@@ -6,12 +6,14 @@ const NavLinks = () => {
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
     { label: "Contact", href: "/contact" },
+    { label: "Contact", href: "/contact" },
+    { label: "Contact", href: "/contact" },
   ];
 
   return (
     <div>
       {links.map((link, index) => (
-        <Link key={index} href={link.href}>
+        <Link className=" flex flex-col p-6" key={index} href={link.href}>
           {link.label}
         </Link>
       ))}
