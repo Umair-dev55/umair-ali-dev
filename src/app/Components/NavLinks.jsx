@@ -14,7 +14,6 @@ const NavLinks = () => {
   return (
     <div>
       {links.map((link, idx) => {
-        console.log(link);
         // return <Link key={idx}>{link.label}</Link>;
         return (
           <Link className="flex p-5 uppercase" key={idx} href={link.href}>
