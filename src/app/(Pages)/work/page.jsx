@@ -8,6 +8,7 @@ const work = () => {
         opacity: 1,
         transition: { delay: 2, duration: 0.4, ease: "easeIn" },
       }}
+      className="h-screen flex items-center"
     >
       work
     </motion.section>

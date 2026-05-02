@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import HeroImage from "../Components/HeroImage";
 import Image from "next/image";
 import myImg from "../../../public/assets/png.png";
+import { TypeAnimation } from "react-type-animation";
 const Home = () => {
   return (
     <motion.section
@@ -15,13 +16,33 @@ const Home = () => {
     >
       <div className="flex flex-col xl:flex-row items-center justify-between w-full">
         <div className="w-full xl:w-[550px]">
-          {" "}
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Necessitatibus voluptate iure asperiores fuga. In blanditiis debitis
-          vel praesentium nisi pariatur, laborum minima facilis eum libero hic
-          iusto repellendus exercitationem deleniti necessitatibus beatae sunt
-          nam magni, ab dolor. Deleniti officiis dolorem culpa commodi
-          voluptates ratione illum nisi accusantium. Qui, incidunt. Magnam.
+          <h1 className="h1">
+            Hi, I Am Umair Ali,
+            <br />
+          </h1>{" "}
+          <h1 className="h1 text-5xl text-accent font-extrabold pb-10">
+            <TypeAnimation
+              sequence={[
+                "Frontend Developer",
+                1000,
+                "MERN Stack Developer",
+                1000,
+                "Next JS Developer",
+                1000,
+                "React JS Developer",
+                1000,
+                "Custom Web Developer",
+                1000,
+              ]}
+              speed={50}
+              repeat={Infinity}
+            />
+          </h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore,
+            excepturi odit. Corrupti eum commodi fugiat aut, rem consequatur
+            tempora nostrum.
+          </p>
         </div>
         <div className="hidden xl:block flex-1 relative z-20">
           {/* blob */}
