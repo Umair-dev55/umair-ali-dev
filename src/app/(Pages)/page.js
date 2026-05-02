@@ -20,7 +20,7 @@ const Home = () => {
             Hi, I Am Umair Ali,
             <br />
           </h1>{" "}
-          <h1 className="h1 text-5xl text-accent font-extrabold pb-10">
+          <h1 className="h1 text-5xl text-accent font-extrabold">
             <TypeAnimation
               sequence={[
                 "Frontend Developer",
@@ -29,12 +29,8 @@ const Home = () => {
                 1000,
                 "Next JS Developer",
                 1000,
-                "React JS Developer",
-                1000,
-                "Custom Web Developer",
-                1000,
               ]}
-              speed={50}
+              speed={100}
               repeat={Infinity}
             />
           </h1>
