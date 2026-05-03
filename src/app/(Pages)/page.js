@@ -4,6 +4,8 @@ import HeroImage from "../Components/HeroImage";
 import Image from "next/image";
 import myImg from "../../../public/assets/png.png";
 import { TypeAnimation } from "react-type-animation";
+import { MoveUpRight, PhoneCall, MailPlus } from "lucide-react";
+import Socials from "../Components/Socials";
 const Home = () => {
   return (
     <motion.section
@@ -14,14 +16,14 @@ const Home = () => {
       }}
       className=""
     >
-      <div className="grid  p-5  sm:grid-cols-2 min-h-screen place-items-center">
-        <div className="">
+      <div className="grid p-5 sm:grid-cols-2 min-h-screen place-items-center">
+        <div className="text-center md:text-left">
           <div className="*:pb-4">
             <h1 className="h1">
-              Hi, I Am Umair Ali,
+              Hi ! I Am Umair Ali,
               <br />
             </h1>{" "}
-            <h1 className="h1 text-5xl text-accent font-extrabold">
+            <h1 className="h1  text-accent font-extrabold">
               <TypeAnimation
                 sequence={[
                   "Frontend Developer",
@@ -35,15 +37,43 @@ const Home = () => {
                 repeat={Infinity}
               />
             </h1>
-            <p className="text-[22px]">
+            <p className="para">
               Passionate about building fast, intuitive, and visually stunning
               web experiences using modern technologies.
             </p>
+            {/* button center in small and left in large */}
+            <button className="  mb-4  min-w-full flex-x-center md:min-w-0">
+              <div className="btn btn-lg btn-accent max-w-15  gap-2 ">
+                <span className="">Let's Talk.</span>
+                <MoveUpRight />
+              </div>
+            </button>
+            <div className="md:flex gap-4 text-lg">
+              {/* Phone */}
+              <div className="flex gap-2 justify-center lg:justify-start">
+                <span className="text-accent">
+                  <PhoneCall />
+                </span>
+                <span>+92 308 6754044</span>
+              </div>
+              {/* mail */}
+              <div className="hidden lg:flex gap-2">
+                <span className="text-accent">
+                  <MailPlus />
+                </span>
+                <span className="">umair.dev55@gmail.com</span>
+              </div>
+            </div>
+            {/* Socials */}
+            <div>
+              <Socials />
+            </div>
           </div>
         </div>
+        {/* 2nd div */}
         <div className="">
           <div>
-            <div className=" flex-1 relative z-20">
+            <div className=" flex-1 relative z-20 ">
               {/* blob */}
               <HeroImage />
               {/* img */}

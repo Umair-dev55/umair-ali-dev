@@ -1,5 +1,10 @@
 @import "tailwindcss";
-
+* {
+  overflow: auto;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
 @theme {
   /* BreakPoints */
   --breakpoint-sm: 640px;
@@ -24,42 +29,61 @@
 body {
   @apply font-primary bg-primary leading-relaxed text-white;
 }
-.h1 {
-  @apply text-[38px] md:text-[50px] xl:text-[56px] leading-[1] tracking-tight font-extrabold;
-}
-.h2 {
-  @apply text-[32px] md:text-[36px] xl:text-[38px] leading-[1.15] tracking-tight font-medium;
-}
-.h3 {
-  @apply text-[28px] md:text-[30px] xl:text-[32px] leading-[1.2]  font-medium;
-}
+@layer components {
+  .h1 {
+    @apply text-[38px] md:text-[50px] xl:text-[56px] leading-[1] tracking-tight font-extrabold;
+  }
+  .h2 {
+    @apply text-[32px] md:text-[36px] xl:text-[38px] leading-[1.15] tracking-tight font-medium;
+  }
+  .h3 {
+    @apply text-[28px] md:text-[30px] xl:text-[32px] leading-[1.2]  font-medium;
+  }
 
-.h4 {
-  @apply text-[22px] md:text-[26px]  leading-snug;
-}
-.container {
-  @apply px-[15px];
-}
+  .h4 {
+    @apply text-[22px] md:text-[26px]  leading-snug;
+  }
+  .para {
+    @apply text-[15px] md:text-[16px] xl:text-[18px] leading-relaxed tracking-wide;
+  }
+  .container {
+    @apply px-[15px];
+  }
 
-/* btns */
-.btn {
-  @apply flex justify-center items-center rounded-full cursor-pointer transition-all font-medium h-[56px];
-}
-.btn-sm {
-  @apply min-w-[168px] px-5 text-[15px] font-semibold;
-}
+  /* btns */
+  .btn {
+    @apply flex justify-center items-center rounded-full cursor-pointer transition-all font-medium h-[56px];
+  }
+  .btn-sm {
+    @apply min-w-[168px] px-5 text-[15px] font-semibold;
+  }
 
-.btn-lg {
-  @apply min-w-[200px] px-6 text-[15px] font-semibold;
-}
-/* btn colors */
-.btn-accent {
-  @apply bg-accent hover:bg-accent-hover;
-}
+  .btn-lg {
+    @apply min-w-[200px] px-6 text-[15px] font-semibold;
+  }
+  /* btn colors */
+  .btn-accent {
+    @apply bg-accent hover:bg-accent-hover;
+  }
 
-.btn-tertiary {
-  @apply bg-tertiary hover:bg-tertiary-hover;
+  .btn-tertiary {
+    @apply bg-tertiary hover:bg-tertiary-hover;
+  }
+  .btn-white {
+    @apply bg-white hover:bg-white/90 text-primary;
+  }
 }
-.btn-white {
-  @apply bg-white hover:bg-white/90 text-primary;
+@layer utilities {
+  flex-center {
+    @apply flex justify-center items-center;
+  }
+  .max-w-15 {
+    max-width: 15ch;
+  }
+  .flex-x-center {
+    @apply flex justify-center;
+  }
+  .flex-y-center {
+    @apply flex items-center;
+  }
 }
