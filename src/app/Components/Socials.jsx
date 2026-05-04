@@ -7,16 +7,11 @@ import {
   RiPhoneLine,
 } from "@remixicon/react";
 
-const socialsData = [
+const socials = [
   {
-    name: "GitHub",
-    icon: RiGithubLine,
-    link: "https://github.com/Umair-dev55",
-  },
-  {
-    name: "LinkedIn",
-    icon: RiLinkedinLine,
-    link: "https://www.linkedin.com/in/umair-dev55",
+    name: "Phone",
+    icon: RiPhoneLine,
+    link: "tel:+923086754944",
   },
   {
     name: "Email",
@@ -24,25 +19,30 @@ const socialsData = [
     link: "umair.dev55@gmail.com",
   },
   {
-    name: "Phone",
-    icon: RiPhoneLine,
-    link: "tel:+923086754944",
+    name: "LinkedIn",
+    icon: RiLinkedinLine,
+    link: "https://www.linkedin.com/in/umair-dev55",
+  },
+  {
+    name: "GitHub",
+    icon: RiGithubLine,
+    link: "https://github.com/Umair-dev55",
   },
 ];
 
-const Socials = () => {
+const Socials = ({ containerStyles = "", iconStyles = "" }) => {
   return (
-    <div className="flex items-center gap-4">
-      {socialsData.map((item, index) => {
-        const Icon = item.icon;
+    <div className={`${containerStyles}`}>
+      {socials.map((icon, index) => {
+        const Icon = icon.icon;
         return (
           <Link
             key={index}
-            href={item.link}
+            href={icon.link}
             target="_blank"
-            className="hover:text-accent transition-all"
+            className={`${iconStyles}`}
           >
-            <Icon size={22} />
+            <Icon size={40} />
           </Link>
         );
       })}

@@ -18,7 +18,7 @@ const Home = () => {
     >
       <div className="grid p-5 sm:grid-cols-2 min-h-screen place-items-center">
         <div className="text-center md:text-left">
-          <div className="*:pb-4">
+          <div className="flex justify-evenly flex-col items-center md:items-start gap-6">
             <h1 className="h1">
               Hi ! I Am Umair Ali,
               <br />
@@ -42,7 +42,7 @@ const Home = () => {
               web experiences using modern technologies.
             </p>
             {/* button center in small and left in large */}
-            <button className="  mb-4  min-w-full flex-x-center md:min-w-0">
+            <button className="min-w-full flex-x-center md:min-w-0">
               <div className="btn btn-lg btn-accent max-w-15  gap-2 ">
                 <span className="">Let's Talk.</span>
                 <MoveUpRight />
@@ -65,8 +65,11 @@ const Home = () => {
               </div>
             </div>
             {/* Socials */}
-            <div>
-              <Socials />
+            <div className="md:absolute top-1/2 right-0 transform -translate-y-1/2">
+              <Socials
+                containerStyles="flex gap-4 md:flex-col justify-center md:rounded-l-3xl md:bg-accent"
+                iconStyles=""
+              />
             </div>
           </div>
         </div>
