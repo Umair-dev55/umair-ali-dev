@@ -67,8 +67,8 @@ const Home = () => {
             {/* Socials */}
             <div className="md:absolute top-1/2 right-0 transform -translate-y-1/2">
               <Socials
-                containerStyles="flex gap-4 md:flex-col justify-center md:rounded-l-3xl md:bg-accent"
-                iconStyles=""
+                containerStyles="flex gap-4 md:flex-col justify-center md:rounded-l-3xl "
+                iconStyles="p-3 md:bg-accent"
               />
             </div>
           </div>

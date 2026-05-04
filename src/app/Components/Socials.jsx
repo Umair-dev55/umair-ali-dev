@@ -42,7 +42,7 @@ const Socials = ({ containerStyles = "", iconStyles = "" }) => {
             target="_blank"
             className={`${iconStyles}`}
           >
-            <Icon size={40} />
+            <Icon size={25} />
           </Link>
         );
       })}
