@@ -1,11 +1,12 @@
 "use client";
 import { motion } from "framer-motion";
-import HeroImage from "../Components/HeroImage";
-import Image from "next/image";
-import myImg from "../../../public/assets/png.png";
 import { TypeAnimation } from "react-type-animation";
 import { MoveUpRight, PhoneCall, MailPlus } from "lucide-react";
+import Image from "next/image";
+import myImg from "../../../public/assets/png.png";
+import HeroImage from "../Components/HeroImage";
 import Socials from "../Components/Socials";
+import Pattern from "../Components/Pattern";
 const Home = () => {
   return (
     <motion.section
@@ -16,6 +17,8 @@ const Home = () => {
       }}
       className=""
     >
+      {/* Pattern */}
+      <Pattern />
       <div className="grid p-5 sm:grid-cols-2 min-h-screen place-items-center">
         <div className="text-center md:text-left">
           <div className="flex justify-evenly flex-col items-center md:items-start gap-6">
@@ -67,8 +70,8 @@ const Home = () => {
             {/* Socials */}
             <div className="md:absolute top-1/2 right-0 transform -translate-y-1/2">
               <Socials
-                containerStyles="flex gap-4 md:flex-col justify-center md:rounded-l-3xl "
-                iconStyles="p-3 md:bg-accent"
+                containerStyles="flex gap-4 md:flex-col justify-center"
+                iconStyles="p-3 bg-accent rounded-full cursor-pointer"
               />
             </div>
           </div>
