@@ -6,6 +6,7 @@ import RectangleTransition from "./Components/RectangleTransition";
 import { Playfair_Display, Inter } from "next/font/google";
 
 import { Cinzel } from "next/font/google";
+import Gradiant from "./Components/Gradiant";
 
 const cinzel = Cinzel({
   subsets: ["latin"],
@@ -38,6 +39,7 @@ export default function RootLayout({ children }) {
         h-full antialiased overflow-hidden relative`}
     >
       <body className="min-h-full flex flex-col">
+        <Gradiant />
         <RectangleTransition />
         <PageTransition>
           <div className="flex">
