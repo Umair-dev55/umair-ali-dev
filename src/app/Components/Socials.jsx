@@ -16,7 +16,7 @@ const socials = [
   {
     name: "Email",
     icon: RiMailLine,
-    link: "umair.dev55@gmail.com",
+    link: "mailto:umair.dev55@gmail.com",
   },
   {
     name: "LinkedIn",
