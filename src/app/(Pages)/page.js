@@ -45,33 +45,35 @@ const Home = () => {
               web experiences using modern technologies.
             </p>
             {/* button center in small and left in large */}
-            <button className="min-w-full flex-x-center md:min-w-0">
+            <button className="min-w-full flex-x-center md:min-w-0 pb-6">
               <div className="btn btn-lg btn-accent max-w-15  gap-2 ">
                 <span className="">Let's Talk.</span>
                 <MoveUpRight />
               </div>
             </button>
-            <div className="md:flex gap-4 text-lg">
-              {/* Phone */}
-              <div className="flex gap-2 justify-center lg:justify-start">
-                <span className="text-accent">
-                  <PhoneCall />
-                </span>
-                <span>+92 308 6754044</span>
-              </div>
-              {/* mail */}
-              <div className="hidden lg:flex gap-2">
-                <span className="text-accent">
-                  <MailPlus />
-                </span>
-                <span className="">umair.dev55@gmail.com</span>
+            <div className="hidden">
+              <div className="md:flex gap-4 text-lg">
+                {/* Phone */}
+                <div className="flex gap-2 justify-center lg:justify-start">
+                  <span className="text-accent">
+                    <PhoneCall />
+                  </span>
+                  <span>+92 308 6754044</span>
+                </div>
+                {/* mail */}
+                <div className="hidden lg:flex gap-2">
+                  <span className="text-accent">
+                    <MailPlus />
+                  </span>
+                  <span className="">umair.dev55@gmail.com</span>
+                </div>
               </div>
             </div>
             {/* Socials */}
             <div className="md:absolute top-1/2 right-0 transform -translate-y-1/2">
               <Socials
-                containerStyles="flex gap-4 md:flex-col justify-center"
-                iconStyles="p-3 bg-accent rounded-full cursor-pointer"
+                containerStyles=" flex gap-4 md:flex-col justify-center"
+                iconStyles="p-2 bg-accent rounded-full cursor-pointer"
               />
             </div>
           </div>
