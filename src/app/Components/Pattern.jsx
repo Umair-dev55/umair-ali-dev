@@ -2,10 +2,10 @@ import React from "react";
 
 const Pattern = () => {
   return (
-    <div className="absolute inset-0 left-0 z- w-full h-full overflow-hidden">
+    <div className="absolute inset-0 left-0 -z-40 w-full h-full overflow-hidden">
       <svg
         className="w-full h-full  "
-        viewBox="0 0 1000 440"
+        viewBox="10 0 1000 440"
         preserveAspectRatio="xMidYMid slice"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
