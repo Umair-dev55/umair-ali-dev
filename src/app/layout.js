@@ -1,12 +1,12 @@
+import Gradiant from "@/components/Gradiant";
 import "./globals.css";
-import MainNav from "./Components/MainNav";
-import Header from "./Components/Header";
-import PageTransition from "./Components/PageTransition";
-import RectangleTransition from "./Components/RectangleTransition";
 import { Playfair_Display, Inter } from "next/font/google";
 
 import { Cinzel } from "next/font/google";
-import Gradiant from "./Components/Gradiant";
+import RectangleTransition from "@/components/RectangleTransition";
+import PageTransition from "@/components/PageTransition";
+import MainNav from "@/components/MainNav";
+import Header from "./Components/Header";
 
 const cinzel = Cinzel({
   subsets: ["latin"],

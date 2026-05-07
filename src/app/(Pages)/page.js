@@ -3,10 +3,10 @@ import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import { MoveUpRight, PhoneCall, MailPlus } from "lucide-react";
 import Image from "next/image";
-import myImg from "../../../public/assets/png.png";
-import HeroImage from "../Components/HeroImage";
-import Socials from "../Components/Socials";
-import Pattern from "../Components/Pattern";
+import HeroImage from "../../components/HeroImage";
+import Socials from "../../components/Socials";
+import Pattern from "../../components/Pattern";
+
 const Home = () => {
   return (
     <motion.section
@@ -81,12 +81,12 @@ const Home = () => {
         {/* 2nd div */}
         <div className="">
           <div>
-            <div className=" flex-1 relative z-20 ">
+            <div className=" flex-1  relative z-20 ">
               {/* blob */}
               <HeroImage />
               {/* img */}
               <Image
-                src={myImg}
+                src="/assets/png.png"
                 alt="image"
                 width={400}
                 height={300}
