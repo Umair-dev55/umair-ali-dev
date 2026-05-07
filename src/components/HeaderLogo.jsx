@@ -2,9 +2,9 @@ import Link from "next/link";
 
 const HeaderLogo = () => {
   return (
-    <Link href="/" className="text-3xl">
+    <Link href={"/"} className="text-2xl  font-bold ">
       Umair
-      <span className="text-base text-white/60">/Dev</span>
+      <span className="text-sm">/DEV</span>
     </Link>
   );
 };

@@ -6,7 +6,7 @@ import { Cinzel } from "next/font/google";
 import RectangleTransition from "@/components/RectangleTransition";
 import PageTransition from "@/components/PageTransition";
 import MainNav from "@/components/MainNav";
-import Header from "./Components/Header";
+import Header from "@/components/Header";
 
 const cinzel = Cinzel({
   subsets: ["latin"],
@@ -48,6 +48,7 @@ export default function RootLayout({ children }) {
             </div>
             <div className="w-full  px-[15px] mx-auto max-w-[1130px] h-screen">
               <header>
+                {/* <Header /> */}
                 <Header />
               </header>
               <div>{children}</div>

@@ -15,7 +15,7 @@ const Home = () => {
         opacity: 1,
         transition: { delay: 2.2, duration: 1, ease: "easeIn" },
       }}
-      className=""
+      className="py-15 sm:py-0"
     >
       {/* Pattern */}
       <Pattern />
@@ -70,7 +70,7 @@ const Home = () => {
               </div>
             </div>
             {/* Socials */}
-            <div className="md:absolute top-1/2 right-0 transform -translate-y-1/2">
+            <div className="md:absolute md:p-5 top-1/2 right-0 transform -translate-y-1/2">
               <Socials
                 containerStyles=" flex gap-4 md:flex-col justify-center"
                 iconStyles="p-2 bg-accent rounded-full cursor-pointer"
