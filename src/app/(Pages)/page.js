@@ -46,10 +46,18 @@ const Home = () => {
             </p>
             {/* button center in small and left in large */}
             <button className="min-w-full flex-x-center md:min-w-0 pb-6">
-              <div className="btn btn-lg btn-accent max-w-15  gap-2 ">
+              {/* <div className="btn btn-lg btn-accent max-w-15  gap-2 ">
                 <span className="">Let's Talk.</span>
                 <MoveUpRight />
-              </div>
+              </div> */}
+              <a
+                href="https://wa.me/923086754944"
+                target="_blank"
+                className="btn btn-lg btn-accent max-w-15 gap-2 flex items-center"
+              >
+                <span>Let's Talk.</span>
+                <MoveUpRight />
+              </a>
             </button>
             <div className="hidden">
               <div className="md:flex gap-4 text-lg">
