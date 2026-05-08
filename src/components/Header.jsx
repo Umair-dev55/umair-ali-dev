@@ -29,7 +29,7 @@ const Header = () => {
               />
             </SheetTrigger>
             <SheetContent
-              className="bg-primary flex justify-between items-center py-16"
+              className="bg-primary flex justify-between items-center py-4"
               side="left"
             >
               <SheetHeader>
