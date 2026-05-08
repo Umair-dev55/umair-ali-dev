@@ -52,8 +52,8 @@ const Header = () => {
                 </button>
                 <div className="">
                   <Socials
-                    containerStyles="flex-x-center gap-4 mb-10"
-                    iconStyles="bg-accent hover:bg-accent/50 p-1 rounded-full cursor-pointer  transition-all"
+                    containerStyles="flex-x-center gap-3 mb-4"
+                    iconStyles="bg-accent hover:bg-accent/50 p-2 rounded-full cursor-pointer  transition-all"
                   />
                 </div>
               </div>
