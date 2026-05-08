@@ -10,7 +10,7 @@ import {
 } from "./ui/sheet";
 import Socials from "./Socials";
 import NavLinks from "./NavLinks";
-import { MoveUpRight } from "lucide-react";
+import { Download } from "lucide-react";
 const Header = () => {
   return (
     <div className="2xl:hidden absolute z-40 left-0 top-0 right-0">
@@ -41,15 +41,20 @@ const Header = () => {
                   Navigation Menu
                 </SheetDescription>
               </SheetHeader>
-              <NavLinks />
+              <NavLinks containerStyles="flex  p-5 uppercase" />
               <div>
-                {/* Lets Talh btn  */}
-                <button className="min-w-full flex-x-center md:min-w-0 pb-6">
-                  <div className="btn btn-lg btn-tertiary max-w-15  gap-2 ">
-                    <span className="">Download CV </span>
-                    <MoveUpRight />
+                {/* Download CV Btn  */}
+                <a
+                  href="/assets/M.Umair Ali.pdf"
+                  target="_blank"
+                  download="Umair_Ali_CV.pdf"
+                  className="min-w-full flex justify-center md:min-w-0 pb-6"
+                >
+                  <div className="btn btn-lg btn-tertiary max-w-15 gap-2 flex items-center">
+                    <span>Download CV</span>
+                    <Download size={20} />
                   </div>
-                </button>
+                </a>
                 <div className="">
                   <Socials
                     containerStyles="flex-x-center gap-3 mb-4"

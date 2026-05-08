@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const NavLinks = () => {
+const NavLinks = ({ containerStyles }) => {
   const links = [
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
@@ -14,7 +14,7 @@ const NavLinks = () => {
       {links.map((link, idx) => {
         // return <Link key={idx}>{link.label}</Link>;
         return (
-          <Link className="flex p-5 uppercase" key={idx} href={link.href}>
+          <Link className={`${containerStyles}`} key={idx} href={link.href}>
             {link.label}
           </Link>
         );

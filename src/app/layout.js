@@ -43,7 +43,7 @@ export default function RootLayout({ children }) {
         <RectangleTransition />
         <PageTransition>
           <div className="flex">
-            <div className="text-[18px] hidden 2xl:flex  w-[285px] h-screen bg-secondary justify-center items-center ">
+            <div className="text-[18px] hidden 2xl:flex  w-[285px] h-screen bg-secondary ">
               <MainNav />
             </div>
             <div className="w-full  px-[15px] mx-auto max-w-[1130px] h-screen">
