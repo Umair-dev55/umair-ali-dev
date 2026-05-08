@@ -5,7 +5,7 @@ import { Download } from "lucide-react";
 
 const MainNav = () => {
   return (
-    <nav className="py-14 w-full flex flex-col justify-between items-center ">
+    <nav className="py-6 w-full flex flex-col justify-between items-center ">
       <HeaderLogo />
       <NavLinks containerStyles="flex p-5 uppercase" />
       {/* Download CV Btn  */}

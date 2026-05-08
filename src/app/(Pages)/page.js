@@ -90,7 +90,7 @@ const Home = () => {
                 alt="image"
                 width={400}
                 height={300}
-                quality={100}
+                quality={75}
                 className="absolute top-0 left-0 rounded-full"
               />
               {/* overlay */}

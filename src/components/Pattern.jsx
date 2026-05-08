@@ -28,16 +28,16 @@ const Pattern = () => {
             />
           </mask>
           <g mask="url(#mask0_168_4188)">
-            <g clip-path="url(#clip0_168_4188)">
+            <g clipPath="url(#clip0_168_4188)">
               <g opacity="0.5">
-                <g clip-path="url(#clip1_168_4188)">
+                <g clipPath="url(#clip1_168_4188)">
                   <line
                     x1="374.3"
                     y1="-108"
                     x2="374.3"
                     y2="660"
                     stroke="#5810FF"
-                    stroke-width="0.6"
+                    strokeWidth="0.6"
                   />
                   <line
                     x1="422.3"
@@ -45,7 +45,7 @@ const Pattern = () => {
                     x2="422.3"
                     y2="660"
                     stroke="#5810FF"
-                    stroke-width="0.6"
+                    strokeWidth="0.6"
                   />
                   <line
                     x1="470.3"
@@ -53,7 +53,7 @@ const Pattern = () => {
                     x2="470.3"
                     y2="660"
                     stroke="#5810FF"
-                    stroke-width="0.6"
+                    strokeWidth="0.6"
                   />
                   <line
                     x1="518.3"
@@ -61,7 +61,7 @@ const Pattern = () => {
                     x2="518.3"
                     y2="660"
                     stroke="#5810FF"
-                    stroke-width="0.6"
+                    strokeWidth="0.6"
                   />
                   <line
                     x1="566.3"
@@ -69,7 +69,7 @@ const Pattern = () => {
                     x2="566.3"
                     y2="660"
                     stroke="#5810FF"
-                    stroke-width="0.6"
+                    strokeWidth="0.6"
                   />
                   <line
                     x1="614.3"
@@ -77,7 +77,7 @@ const Pattern = () => {
                     x2="614.3"
                     y2="660"
                     stroke="#5810FF"
-                    stroke-width="0.6"
+                    strokeWidth="0.6"
                   />
                   <line
                     x1="662.3"
@@ -85,7 +85,7 @@ const Pattern = () => {
                     x2="662.3"
                     y2="660"
                     stroke="#5810FF"
-                    stroke-width="0.6"
+                    strokeWidth="0.6"
                   />
                   <line
                     x1="710.3"
@@ -93,7 +93,7 @@ const Pattern = () => {
                     x2="710.3"
                     y2="660"
                     stroke="#5810FF"
-                    stroke-width="0.6"
+                    strokeWidth="0.6"
                   />
                   <line
                     x1="758.3"
@@ -101,7 +101,7 @@ const Pattern = () => {
                     x2="758.3"
                     y2="660"
                     stroke="#5810FF"
-                    stroke-width="0.6"
+                    strokeWidth="0.6"
                   />
                   <line
                     x1="806.3"
@@ -109,7 +109,7 @@ const Pattern = () => {
                     x2="806.3"
                     y2="660"
                     stroke="#5810FF"
-                    stroke-width="0.6"
+                    strokeWidth="0.6"
                   />
                   <line
                     x1="854.3"
@@ -117,7 +117,7 @@ const Pattern = () => {
                     x2="854.3"
                     y2="660"
                     stroke="#5810FF"
-                    stroke-width="0.6"
+                    strokeWidth="0.6"
                   />
                   <line
                     x1="902.3"
@@ -125,7 +125,7 @@ const Pattern = () => {
                     x2="902.3"
                     y2="660"
                     stroke="#5810FF"
-                    stroke-width="0.6"
+                    strokeWidth="0.6"
                   />
                   <line
                     x1="950.3"
@@ -133,7 +133,7 @@ const Pattern = () => {
                     x2="950.3"
                     y2="660"
                     stroke="#5810FF"
-                    stroke-width="0.6"
+                    strokeWidth="0.6"
                   />
                   <line
                     x1="998.3"
@@ -141,7 +141,7 @@ const Pattern = () => {
                     x2="998.3"
                     y2="660"
                     stroke="#5810FF"
-                    stroke-width="0.6"
+                    strokeWidth="0.6"
                   />
                   <line
                     x1="1046.3"
@@ -149,7 +149,7 @@ const Pattern = () => {
                     x2="1046.3"
                     y2="660"
                     stroke="#5810FF"
-                    stroke-width="0.6"
+                    strokeWidth="0.6"
                   />
                   <line
                     x1="1094.3"
@@ -157,7 +157,7 @@ const Pattern = () => {
                     x2="1094.3"
                     y2="660"
                     stroke="#5810FF"
-                    stroke-width="0.6"
+                    strokeWidth="0.6"
                   />
                 </g>
                 <rect
@@ -169,14 +169,14 @@ const Pattern = () => {
                 />
               </g>
               <g opacity="0.5">
-                <g clip-path="url(#clip2_168_4188)">
+                <g clipPath="url(#clip2_168_4188)">
                   <line
                     x1="374"
                     y1="35.7"
                     x2="1142"
                     y2="35.7"
                     stroke="#5B28FF"
-                    stroke-width="0.6"
+                    strokeWidth="0.6"
                   />
                   <line
                     x1="374"
@@ -184,7 +184,7 @@ const Pattern = () => {
                     x2="1142"
                     y2="83.7"
                     stroke="#5B28FF"
-                    stroke-width="0.6"
+                    strokeWidth="0.6"
                   />
                   <line
                     x1="374"
@@ -192,7 +192,7 @@ const Pattern = () => {
                     x2="1142"
                     y2="131.7"
                     stroke="#5B28FF"
-                    stroke-width="0.6"
+                    strokeWidth="0.6"
                   />
                   <line
                     x1="374"
@@ -200,7 +200,7 @@ const Pattern = () => {
                     x2="1142"
                     y2="179.7"
                     stroke="#5810FF"
-                    stroke-width="0.6"
+                    strokeWidth="0.6"
                   />
                   <line
                     x1="374"
@@ -208,7 +208,7 @@ const Pattern = () => {
                     x2="1142"
                     y2="227.7"
                     stroke="#5B28FF"
-                    stroke-width="0.6"
+                    strokeWidth="0.6"
                   />
                   <line
                     x1="374"
@@ -216,7 +216,7 @@ const Pattern = () => {
                     x2="1142"
                     y2="275.7"
                     stroke="#5B28FF"
-                    stroke-width="0.6"
+                    strokeWidth="0.6"
                   />
                   <line
                     x1="374"
@@ -224,7 +224,7 @@ const Pattern = () => {
                     x2="1142"
                     y2="323.7"
                     stroke="#5B28FF"
-                    stroke-width="0.6"
+                    strokeWidth="0.6"
                   />
                   <line
                     x1="374"
@@ -232,7 +232,7 @@ const Pattern = () => {
                     x2="1142"
                     y2="371.7"
                     stroke="#5B28FF"
-                    stroke-width="0.6"
+                    strokeWidth="0.6"
                   />
                   <line
                     x1="374"
@@ -240,7 +240,7 @@ const Pattern = () => {
                     x2="1142"
                     y2="419.7"
                     stroke="#5B28FF"
-                    stroke-width="0.6"
+                    strokeWidth="0.6"
                   />
                   <line
                     x1="374"
@@ -248,7 +248,7 @@ const Pattern = () => {
                     x2="1142"
                     y2="467.7"
                     stroke="#5B28FF"
-                    stroke-width="0.6"
+                    strokeWidth="0.6"
                   />
                   <line
                     x1="374"
@@ -256,7 +256,7 @@ const Pattern = () => {
                     x2="1142"
                     y2="515.7"
                     stroke="#5B28FF"
-                    stroke-width="0.6"
+                    strokeWidth="0.6"
                   />
                   <line
                     x1="374"
@@ -264,7 +264,7 @@ const Pattern = () => {
                     x2="1142"
                     y2="563.7"
                     stroke="#5B28FF"
-                    stroke-width="0.6"
+                    strokeWidth="0.6"
                   />
                   <line
                     x1="374"
@@ -272,7 +272,7 @@ const Pattern = () => {
                     x2="1142"
                     y2="611.7"
                     stroke="#5B28FF"
-                    stroke-width="0.6"
+                    strokeWidth="0.6"
                   />
                   <line
                     x1="374"
@@ -280,7 +280,7 @@ const Pattern = () => {
                     x2="1142"
                     y2="659.7"
                     stroke="#5B28FF"
-                    stroke-width="0.6"
+                    strokeWidth="0.6"
                   />
                 </g>
                 <rect
@@ -316,7 +316,7 @@ const Pattern = () => {
               width="49"
               height="48"
               fill="#5810FF"
-              fill-opacity="0.36"
+              fillOpacity="0.36"
             />
             <rect
               x="470"
@@ -324,7 +324,7 @@ const Pattern = () => {
               width="49"
               height="48"
               fill="#5810FF"
-              fill-opacity="0.36"
+              fillOpacity="0.36"
             />
             <rect x="999" y="324" width="49" height="48" fill="#5810FF" />
           </g>
@@ -339,7 +339,7 @@ const Pattern = () => {
             gradientTransform="translate(384 384) rotate(90) scale(384 384)"
           >
             <stop />
-            <stop offset="1" stop-opacity="0" />
+            <stop offset="1" stopOpacity="0" />
           </radialGradient>
           <linearGradient
             id="paint1_linear_168_4188"
@@ -349,9 +349,9 @@ const Pattern = () => {
             y2="168"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="white" stop-opacity="0" />
-            <stop offset="0.50284" stop-color="white" />
-            <stop offset="1" stop-color="white" stop-opacity="0" />
+            <stop stopColor="white" stopOpacity="0" />
+            <stop offset="0.50284" stopColor="white" />
+            <stop offset="1" stopColor="white" stopOpacity="0" />
           </linearGradient>
           <linearGradient
             id="paint2_linear_168_4188"
@@ -361,9 +361,9 @@ const Pattern = () => {
             y2="180"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="white" stop-opacity="0" />
-            <stop offset="0.50284" stop-color="white" />
-            <stop offset="1" stop-color="white" stop-opacity="0" />
+            <stop stopColor="white" stopOpacity="0" />
+            <stop offset="0.50284" stopColor="white" />
+            <stop offset="1" stopColor="white" stopOpacity="0" />
           </linearGradient>
           <linearGradient
             id="paint3_linear_168_4188"
@@ -373,9 +373,9 @@ const Pattern = () => {
             y2="268"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="white" stop-opacity="0" />
-            <stop offset="0.50284" stop-color="white" />
-            <stop offset="1" stop-color="white" stop-opacity="0" />
+            <stop stopColor="white" stopOpacity="0" />
+            <stop offset="0.50284" stopColor="white" />
+            <stop offset="1" stopColor="white" stopOpacity="0" />
           </linearGradient>
           <linearGradient
             id="paint4_linear_168_4188"
@@ -385,9 +385,9 @@ const Pattern = () => {
             y2="276"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="white" stop-opacity="0" />
-            <stop offset="0.50284" stop-color="white" />
-            <stop offset="1" stop-color="white" stop-opacity="0" />
+            <stop stopColor="white" stopOpacity="0" />
+            <stop offset="0.50284" stopColor="white" />
+            <stop offset="1" stopColor="white" stopOpacity="0" />
           </linearGradient>
           <linearGradient
             id="paint5_linear_168_4188"
@@ -397,9 +397,9 @@ const Pattern = () => {
             y2="410"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="white" stop-opacity="0" />
-            <stop offset="0.50284" stop-color="white" />
-            <stop offset="1" stop-color="white" stop-opacity="0" />
+            <stop stopColor="white" stopOpacity="0" />
+            <stop offset="0.50284" stopColor="white" />
+            <stop offset="1" stopColor="white" stopOpacity="0" />
           </linearGradient>
           <linearGradient
             id="paint6_linear_168_4188"
@@ -409,9 +409,9 @@ const Pattern = () => {
             y2="419"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="white" stop-opacity="0" />
-            <stop offset="0.50284" stop-color="white" />
-            <stop offset="1" stop-color="white" stop-opacity="0" />
+            <stop stopColor="white" stopOpacity="0" />
+            <stop offset="0.50284" stopColor="white" />
+            <stop offset="1" stopColor="white" stopOpacity="0" />
           </linearGradient>
           <linearGradient
             id="paint7_linear_168_4188"
@@ -421,9 +421,9 @@ const Pattern = () => {
             y2="268"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="white" stop-opacity="0" />
-            <stop offset="0.50284" stop-color="white" />
-            <stop offset="1" stop-color="white" stop-opacity="0" />
+            <stop stopColor="white" stopOpacity="0" />
+            <stop offset="0.50284" stopColor="white" />
+            <stop offset="1" stopColor="white" stopOpacity="0" />
           </linearGradient>
           <linearGradient
             id="paint8_linear_168_4188"
@@ -433,9 +433,9 @@ const Pattern = () => {
             y2="276"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="white" stop-opacity="0" />
-            <stop offset="0.50284" stop-color="white" />
-            <stop offset="1" stop-color="white" stop-opacity="0" />
+            <stop stopColor="white" stopOpacity="0" />
+            <stop offset="0.50284" stopColor="white" />
+            <stop offset="1" stopColor="white" stopOpacity="0" />
           </linearGradient>
           <linearGradient
             id="paint9_linear_168_4188"
@@ -445,9 +445,9 @@ const Pattern = () => {
             y2="363"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="white" stop-opacity="0" />
-            <stop offset="0.50284" stop-color="white" />
-            <stop offset="1" stop-color="white" stop-opacity="0" />
+            <stop stopColor="white" stopOpacity="0" />
+            <stop offset="0.50284" stopColor="white" />
+            <stop offset="1" stopColor="white" stopOpacity="0" />
           </linearGradient>
           <linearGradient
             id="paint10_linear_168_4188"
@@ -457,9 +457,9 @@ const Pattern = () => {
             y2="372"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="white" stop-opacity="0" />
-            <stop offset="0.50284" stop-color="white" />
-            <stop offset="1" stop-color="white" stop-opacity="0" />
+            <stop stopColor="white" stopOpacity="0" />
+            <stop offset="0.50284" stopColor="white" />
+            <stop offset="1" stopColor="white" stopOpacity="0" />
           </linearGradient>
           <linearGradient
             id="paint11_linear_168_4188"
@@ -469,9 +469,9 @@ const Pattern = () => {
             y2="120"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="white" stop-opacity="0" />
-            <stop offset="0.50284" stop-color="white" />
-            <stop offset="1" stop-color="white" stop-opacity="0" />
+            <stop stopColor="white" stopOpacity="0" />
+            <stop offset="0.50284" stopColor="white" />
+            <stop offset="1" stopColor="white" stopOpacity="0" />
           </linearGradient>
           <linearGradient
             id="paint12_linear_168_4188"
@@ -481,9 +481,9 @@ const Pattern = () => {
             y2="132"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="white" stop-opacity="0" />
-            <stop offset="0.50284" stop-color="white" />
-            <stop offset="1" stop-color="white" stop-opacity="0" />
+            <stop stopColor="white" stopOpacity="0" />
+            <stop offset="0.50284" stopColor="white" />
+            <stop offset="1" stopColor="white" stopOpacity="0" />
           </linearGradient>
           <linearGradient
             id="paint13_linear_168_4188"
@@ -493,9 +493,9 @@ const Pattern = () => {
             y2="215"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="white" stop-opacity="0" />
-            <stop offset="0.50284" stop-color="white" />
-            <stop offset="1" stop-color="white" stop-opacity="0" />
+            <stop stopColor="white" stopOpacity="0" />
+            <stop offset="0.50284" stopColor="white" />
+            <stop offset="1" stopColor="white" stopOpacity="0" />
           </linearGradient>
           <linearGradient
             id="paint14_linear_168_4188"
@@ -505,9 +505,9 @@ const Pattern = () => {
             y2="227"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="white" stop-opacity="0" />
-            <stop offset="0.50284" stop-color="white" />
-            <stop offset="1" stop-color="white" stop-opacity="0" />
+            <stop stopColor="white" stopOpacity="0" />
+            <stop offset="0.50284" stopColor="white" />
+            <stop offset="1" stopColor="white" stopOpacity="0" />
           </linearGradient>
           <clipPath id="clip0_168_4188">
             <rect

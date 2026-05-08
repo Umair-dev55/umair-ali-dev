@@ -1,6 +1,5 @@
 import Gradiant from "@/components/Gradiant";
 import "./globals.css";
-import { Playfair_Display, Inter } from "next/font/google";
 
 import { Cinzel } from "next/font/google";
 import RectangleTransition from "@/components/RectangleTransition";
@@ -13,17 +12,6 @@ const cinzel = Cinzel({
   weight: ["400", "500", "600", "700", "800", "900"], // multiple weights available
   display: "swap",
 });
-const playfair = Playfair_Display({
-  weight: ["400", "500", "600", "700", "900"], // Luxury feel ke liye heavy weights
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-playfair",
-  style: ["normal", "italic"], // Italic bhi support karega
-});
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-});
 export const metadata = {
   title: "Umair Ali - Portfolio",
   description:
@@ -35,7 +23,7 @@ export default function RootLayout({ children }) {
     <html
       lang="en"
       className={`
-         ${cinzel.variable} ${playfair.variable} ${inter.variable}
+         ${cinzel.variable} 
         h-full antialiased overflow-hidden relative`}
     >
       <body className="min-h-full flex flex-col">
