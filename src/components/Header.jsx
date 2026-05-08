@@ -1,5 +1,5 @@
 import HeaderLogo from "@/components/HeaderLogo";
-import { Menu } from "lucide-react";
+
 import {
   Sheet,
   SheetContent,
@@ -9,6 +9,8 @@ import {
   SheetTrigger,
 } from "./ui/sheet";
 import Socials from "./Socials";
+import NavLinks from "./NavLinks";
+import { MoveUpRight } from "lucide-react";
 const Header = () => {
   return (
     <div className="2xl:hidden absolute z-40 left-0 top-0 right-0">
@@ -18,20 +20,43 @@ const Header = () => {
           <HeaderLogo />
           {/* nav mbl Use shadcn sheet */}
           <Sheet>
-            <SheetTrigger className="cursor-pointer ">
-              <Menu />
+            <SheetTrigger className="cursor-pointer text-white">
+              {/* white colour  */}
+              <img
+                className="invert"
+                src="assets/menu-4-fill.png"
+                alt="hamburger icon"
+              />
             </SheetTrigger>
-            <SheetContent>
-              Content Here add
+            <SheetContent
+              className="bg-primary flex justify-between items-center pt-16 pb-20"
+              side="left"
+            >
               <SheetHeader>
-                Sheet Header add
-                <SheetTitle>Sheet Title</SheetTitle>
-                <SheetDescription>
-                  Sheet
-                  <Socials />
-                  Description
+                <SheetTitle>
+                  {/* Logo  */}
+                  <HeaderLogo />
+                </SheetTitle>
+                <SheetDescription className="sr-only">
+                  Navigation Menu
                 </SheetDescription>
               </SheetHeader>
+              <NavLinks />
+              <div>
+                {/* Lets Talh btn  */}
+                <button className="min-w-full flex-x-center md:min-w-0 pb-6">
+                  <div className="btn btn-lg btn-tertiary max-w-15  gap-2 ">
+                    <span className="">Download CV </span>
+                    <MoveUpRight />
+                  </div>
+                </button>
+                <div className="">
+                  <Socials
+                    containerStyles="flex-x-center gap-4 mb-10"
+                    iconStyles="bg-accent hover:bg-accent/50 p-2 rounded-full cursor-pointer  transition-all"
+                  />
+                </div>
+              </div>
             </SheetContent>
           </Sheet>
         </div>
