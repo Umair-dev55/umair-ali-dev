@@ -2,11 +2,19 @@
 /* @import "tw-animate-css";
 @import "shadcn/tailwind.css"; */
 
-* {
+body {
+  overflow-x: hidden;
   overflow: auto;
 }
 *::-webkit-scrollbar {
   display: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+::selection {
+  background: #5810ff83;
+  color: white;
 }
 @theme {
   /* BreakPoints */
