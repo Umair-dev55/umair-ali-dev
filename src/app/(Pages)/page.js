@@ -6,6 +6,7 @@ import Image from "next/image";
 import HeroImage from "../../components/HeroImage";
 import Socials from "../../components/Socials";
 import Pattern from "../../components/Pattern";
+import Gradiant from "@/components/Gradiant";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
     >
       {/* Pattern */}
       <Pattern />
+      <Gradiant />
       <div className="grid p-5 sm:grid-cols-2 min-h-screen place-items-center">
         <div className="text-center md:text-left">
           <div className="flex justify-evenly flex-col items-center md:items-start gap-6">
