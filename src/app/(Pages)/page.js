@@ -2,11 +2,10 @@
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import { MoveUpRight, PhoneCall, MailPlus } from "lucide-react";
-import Image from "next/image";
-import HeroImage from "../../components/HeroImage";
 import Socials from "../../components/Socials";
 import Pattern from "../../components/Pattern";
 import Gradiant from "@/components/Gradiant";
+import HeroImageCard from "@/components/HeroImageCard";
 
 const Home = () => {
   return (
@@ -90,23 +89,7 @@ const Home = () => {
         </div>
         {/* 2nd div */}
         <div className="">
-          <div>
-            <div className=" flex-1  relative z-20 ">
-              {/* blob */}
-              <HeroImage />
-              {/* img */}
-              <Image
-                src="/assets/png.png"
-                alt="image"
-                width={400}
-                height={300}
-                quality={75}
-                className="absolute top-0 left-0 rounded-full"
-              />
-              {/* overlay */}
-              <div className="absolute top-0 right-0 w-full h-full bg-primary/20 opacity-50 rounded-full z-10"></div>
-            </div>
-          </div>
+          <HeroImageCard />
         </div>
       </div>
     </motion.section>
