@@ -3,7 +3,7 @@ const HeroImage = () => {
   return (
     <div className="">
       <svg
-        className="size-80"
+        className="size-full"
         viewBox="10 0 200 200"
         xmlns="http://www.w3.org/2000/svg"
       >
