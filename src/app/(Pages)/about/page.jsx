@@ -6,6 +6,7 @@ import AboutStats from "@/components/AboutStats";
 import AboutTestimonials from "@/components/AboutTestimonials";
 import AboutInfo from "@/components/AboutInfo";
 import AboutSkills from "@/components/AboutSkills";
+
 const about = () => {
   return (
     <motion.section
@@ -16,14 +17,9 @@ const about = () => {
       }}
       className="py-15 sm:py-0"
     >
-      <div className="grid  sm:grid-cols-2 min-h-screen place-items-center h-screen">
-        {/* 1st div */}
-        <div className="relative py-10">
-          <HeroImageCard />
-        </div>
-        {/* 2nd div */}
-
-        <div className="text-left ">
+      <div className="grid sm:grid-cols-2 min-h-screen place-items-center h-screen flex-col md:flex-row">
+        {/* 2nd div (Content) - Show first on mobile */}
+        <div className="text-left order-1 sm:order-2">
           <ScrollArea className="h-[500px] w-full">
             <div className="flex justify-evenly flex-col items-start gap-6">
               <div className="text-start *:py-2">
@@ -61,6 +57,11 @@ const about = () => {
             </div>
             <ScrollBar orientation="vertical" />
           </ScrollArea>
+        </div>
+
+        {/* 1st div (Hero Image) - Show second on mobile */}
+        <div className="relative py-10 order-2 sm:order-1">
+          <HeroImageCard />
         </div>
       </div>
     </motion.section>
