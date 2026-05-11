@@ -16,7 +16,7 @@ const about = () => {
       }}
       className="py-15 sm:py-0"
     >
-      <div className="grid  sm:grid-cols-2 min-h-screen place-items-center">
+      <div className="grid  sm:grid-cols-2 min-h-screen place-items-center h-screen">
         {/* 1st div */}
         <div className="relative py-10">
           <HeroImageCard />
