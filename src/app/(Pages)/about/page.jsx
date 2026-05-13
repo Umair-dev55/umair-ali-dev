@@ -46,15 +46,15 @@ const about = () => {
                 <div className=" ">
                   <AboutTestimonials />
                 </div>
-                {/* <div className="">
+                <div className="">
                   <AboutInfo />
-                </div> */}
-                {/* <div className="">
+                </div>
+                <div className="">
                   <Journey />
                 </div>
                 <div className="">
                   <AboutSkills />
-                </div> */}
+                </div>
               </div>
             </div>
             <ScrollBar orientation="vertical" />
