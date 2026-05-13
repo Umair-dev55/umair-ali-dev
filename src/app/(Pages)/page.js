@@ -13,9 +13,9 @@ const Home = () => {
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
-        transition: { delay: 1.5, duration: 1, ease: "easeIn" },
+        transition: { delay: 0, duration: 0.2, ease: "easeIn" },
       }}
-      className="py-15 sm:py-0"
+      className="py-15 sm:py-0 overflow-x-hidden"
     >
       {/* Pattern */}
       <Pattern />
