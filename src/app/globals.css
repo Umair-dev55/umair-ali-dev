@@ -1,7 +1,9 @@
 @import "tailwindcss";
 /* @import "tw-animate-css";
 @import "shadcn/tailwind.css"; */
-
+* {
+  scroll-behavior: smooth;
+}
 body {
   overflow-x: hidden;
   overflow: auto;
@@ -85,7 +87,7 @@ body {
   }
 }
 @layer utilities {
-  flex-center {
+  .flex-center {
     @apply flex justify-center items-center;
   }
   .max-w-15 {
