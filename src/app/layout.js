@@ -22,9 +22,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`
-         ${cinzel.variable} 
-        h-full antialiased overflow-hidden relative`}
+      className={`${cinzel.variable} h-full antialiased overflow-hidden relative`}
     >
       <body className="min-h-full flex flex-col">
         <Gradiant />
@@ -34,9 +32,8 @@ export default function RootLayout({ children }) {
             <div className="text-[18px] hidden 2xl:flex  w-[285px] h-screen bg-secondary ">
               <MainNav />
             </div>
-            <div className="w-full  px-[15px] mx-auto max-w-[1130px] h-screen">
+            <div className="w-full overflow-hidden px-[15px] mx-auto max-w-[1130px] h-screen">
               <header>
-                {/* <Header /> */}
                 <Header />
               </header>
               <div>{children}</div>
