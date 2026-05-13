@@ -19,32 +19,31 @@ const about = () => {
     >
       <div className="grid sm:grid-cols-2 min-h-screen place-items-center h-screen flex-col md:flex-row">
         {/* 2nd div (Content) - Show first on mobile */}
-        <div className="text-left order-1 sm:order-2">
+        <div className="text-left order-1 sm:order-2 p-4">
           <ScrollArea className="h-[500px] w-full">
             <div className="flex justify-evenly flex-col items-start gap-6">
-              <div className="text-start *:py-2">
+              <div className="text-center sm:text-start *:py-2">
                 <div className="flex items-center gap-2">
                   <span className="w-2 h-2 bg-accent rounded-full"></span>
-                  <span>About Me</span>
+                  <span className="">About Me</span>
                 </div>
                 <h2 className="">
                   <span className="h1 text-accent">Umair</span>
                   <span>/Dev</span>
                 </h2>
                 <p className="">
-                  I am a frontend web developer specializing in building modern,
-                  responsive, and user-friendly interfaces. I am passionate
-                  about web development and continuously strive to improve my
-                  skills and knowledge in the ever-evolving field of web
-                  technologies.
+                  Frontend Web Developer with expertise in building modern,
+                  responsive, and high-performance web applications. Passionate
+                  about creating exceptional user experiences with React and
+                  latest web technologies.
                 </p>
               </div>
-              <div className="h-[2px] w-full bg-gray-400"></div>
-              <div className="flex flex-col ">
+              <div className="h-[2px] max-w-full bg-gray-400"></div>
+              <div className="flex flex-col gap-8 justify-center sm:justify-start sm:items-start items-center  w-full">
                 <div className="">
                   <AboutStats />
                 </div>
-                <div className="">
+                <div className="h-full p-4  w-full">
                   <AboutTestimonials />
                 </div>
                 <div className="">
@@ -60,7 +59,7 @@ const about = () => {
         </div>
 
         {/* 1st div (Hero Image) - Show second on mobile */}
-        <div className="relative py-10 order-2 sm:order-1">
+        <div className="flex justify-center py-10 order-2 sm:order-1">
           <HeroImageCard />
         </div>
       </div>
