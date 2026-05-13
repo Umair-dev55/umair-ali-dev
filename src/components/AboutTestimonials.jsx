@@ -81,7 +81,7 @@ const AboutTestimonials = () => {
         >
           {testimonials.map((testimonial) => (
             <SwiperSlide key={testimonial.id}>
-              <div className="rounded-4xl border-tertiary bg-tertiary hover:border-tertiary-hover  p-8 text-center min-h-[260px] flex flex-col justify-between">
+              <div className="rounded-4xl  border border-accent hover:border-accent-hover bg-tertiary hover:bg-tertiary-hover  p-8 text-center min-h-[260px] flex flex-col justify-between">
                 {/* review */}
                 <p className="para text-gray-300 leading-relaxed text-[16px]">
                   "{testimonial.review}"
