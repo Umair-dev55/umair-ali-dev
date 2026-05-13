@@ -4,10 +4,6 @@
 * {
   scroll-behavior: smooth;
 }
-body {
-  overflow-x: hidden;
-  overflow: auto;
-}
 *::-webkit-scrollbar {
   display: none;
 }
