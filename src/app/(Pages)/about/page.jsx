@@ -6,6 +6,7 @@ import AboutStats from "@/components/AboutStats";
 import AboutTestimonials from "@/components/AboutTestimonials";
 import AboutInfo from "@/components/AboutInfo";
 import AboutSkills from "@/components/AboutSkills";
+import Journey from "@/components/Journey";
 
 const about = () => {
   return (
@@ -13,13 +14,13 @@ const about = () => {
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
-        transition: { delay: 1.5, duration: 0.4, ease: "easeIn" },
+        transition: { delay: 0, duration: 0.2, ease: "easeIn" },
       }}
-      className="py-15 sm:py-0"
+      className="py-15 sm:py-0 overflow-x-hidden "
     >
-      <div className="grid sm:grid-cols-2 min-h-screen place-items-center h-screen flex-col md:flex-row">
+      <div className="grid sm:grid-cols-2 min-h-screen place-items-center h-screen flex-col md:flex-row mx-auto">
         {/* 2nd div (Content) - Show first on mobile */}
-        <div className="text-left order-1 sm:order-2 p-4">
+        <div className="text-left order-1 sm:order-2 p-4 w-full">
           <ScrollArea className="h-[500px] w-full">
             <div className="flex justify-evenly flex-col items-start gap-6">
               <div className="text-center sm:text-start *:py-2">
@@ -31,27 +32,29 @@ const about = () => {
                   <span className="h1 text-accent">Umair</span>
                   <span>/Dev</span>
                 </h2>
-                <p className="">
+                <p className="para">
                   Frontend Web Developer with expertise in building modern,
                   responsive, and high-performance web applications. Passionate
                   about creating exceptional user experiences with React and
                   latest web technologies.
                 </p>
               </div>
-              <div className="h-[2px] max-w-full bg-gray-400"></div>
               <div className="flex flex-col gap-8 justify-center sm:justify-start sm:items-start items-center  w-full">
                 <div className="">
                   <AboutStats />
                 </div>
-                <div className="h-full p-4  w-full">
+                <div className=" ">
                   <AboutTestimonials />
                 </div>
-                <div className="">
+                {/* <div className="">
                   <AboutInfo />
+                </div> */}
+                {/* <div className="">
+                  <Journey />
                 </div>
                 <div className="">
                   <AboutSkills />
-                </div>
+                </div> */}
               </div>
             </div>
             <ScrollBar orientation="vertical" />
@@ -59,7 +62,7 @@ const about = () => {
         </div>
 
         {/* 1st div (Hero Image) - Show second on mobile */}
-        <div className="flex justify-center py-10 order-2 sm:order-1">
+        <div className="flex justify-center py-10 order-2 sm:order-1 ">
           <HeroImageCard />
         </div>
       </div>
