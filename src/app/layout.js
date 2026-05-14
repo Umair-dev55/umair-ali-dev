@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${cinzel.variable} h-full antialiased overflow-hidden relative`}
+      className={`${cinzel.variable} h-full antialiased overflow-x-hidden relative`}
     >
       <body className="min-h-full flex flex-col">
         <Gradiant />
