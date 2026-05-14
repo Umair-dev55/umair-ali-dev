@@ -7,6 +7,7 @@ import AboutTestimonials from "@/components/AboutTestimonials";
 import AboutInfo from "@/components/AboutInfo";
 import AboutSkills from "@/components/AboutSkills";
 import Journey from "@/components/Journey";
+import Socials from "@/components/Socials";
 
 const about = () => {
   return (
@@ -62,8 +63,17 @@ const about = () => {
         </div>
 
         {/* 1st div (Hero Image) - Show second on mobile */}
-        <div className="flex justify-center py-10 order-2 sm:order-1 ">
+        <div className="flex flex-col gap-8 justify-center py-10 order-2 sm:order-1 ">
           <HeroImageCard />
+          <div>
+            {/* Socials */}
+            <div className="md:absolute md:p-5 top-1/2 right-0 transform -translate-y-1/2">
+              <Socials
+                containerStyles=" flex gap-4 md:flex-col justify-center"
+                iconStyles="p-2 bg-accent rounded-full cursor-pointer"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </motion.section>
