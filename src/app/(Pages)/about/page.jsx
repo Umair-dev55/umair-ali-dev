@@ -16,12 +16,12 @@ const about = () => {
         opacity: 1,
         transition: { delay: 0, duration: 0.2, ease: "easeIn" },
       }}
-      className="py-15 sm:py-0 overflow-x-hidden px-2"
+      className=" sm:py-0  px-2"
     >
-      <div className="grid sm:grid-cols-2 min-h-screen place-items-center h-screen flex-col md:flex-row mx-auto">
+      <div className="grid sm:grid-cols-2 place-items-center sm:h-screen flex-col md:flex-row mx-auto">
         {/* 2nd div (Content) - Show first on mobile */}
         <div className="text-left order-1 sm:order-2 p-4 w-full">
-          <ScrollArea className="h-[500px] w-full">
+          <ScrollArea className="h-auto sm:h-[calc(100vh-90px)] w-full">
             <div className="flex justify-evenly flex-col items-start gap-6">
               <div className="text-center sm:text-start *:py-2">
                 <div className="flex items-center gap-2">
