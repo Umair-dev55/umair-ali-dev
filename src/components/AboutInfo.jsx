@@ -48,7 +48,7 @@ const AboutInfo = () => {
               </div>
 
               <div>
-                <h3 className="h4 font-bold">{item.title}</h3>
+                <h3 className="h5 font-bold">{item.title}</h3>
                 <p className="para">{item.value}</p>
               </div>
             </div>
