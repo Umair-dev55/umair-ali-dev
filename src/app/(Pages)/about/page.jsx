@@ -16,7 +16,7 @@ const about = () => {
         opacity: 1,
         transition: { delay: 0, duration: 0.2, ease: "easeIn" },
       }}
-      className="py-15 sm:py-0 overflow-x-hidden "
+      className="py-15 sm:py-0 overflow-x-hidden px-2"
     >
       <div className="grid sm:grid-cols-2 min-h-screen place-items-center h-screen flex-col md:flex-row mx-auto">
         {/* 2nd div (Content) - Show first on mobile */}
@@ -46,14 +46,14 @@ const about = () => {
                 <div className=" ">
                   <AboutTestimonials />
                 </div>
-                <div className="">
-                  <AboutInfo />
+                <div className="flex">
+                  <AboutSkills />
                 </div>
                 <div className="">
                   <Journey />
                 </div>
                 <div className="">
-                  <AboutSkills />
+                  <AboutInfo />
                 </div>
               </div>
             </div>
