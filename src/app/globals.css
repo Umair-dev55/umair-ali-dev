@@ -81,6 +81,10 @@ body {
   .btn-white {
     @apply bg-white hover:bg-white/90 text-primary;
   }
+
+  .custom-border {
+    @apply bg-tertiary border border-accent p-4;
+  }
 }
 @layer utilities {
   .flex-center {
