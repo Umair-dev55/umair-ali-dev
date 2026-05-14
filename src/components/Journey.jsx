@@ -19,7 +19,7 @@ const Journey = () => {
   return (
     <section className="w-full py-10">
       <div className="max-w-3xl mx-auto ">
-        <div className="mb-8">
+        <div className="mb-8 text-center p-4">
           <h2 className="h2 font-bold">Professional Journey</h2>
           <p className="para mt-2">
             Experience and roles throughout my development career.
@@ -27,11 +27,7 @@ const Journey = () => {
         </div>
 
         {myJourney.map((item) => (
-          <div
-            key={item.id}
-            className=" rounded-2xl p-6 bg-tertiary mb-4
-            hover:bg-tertiary-hover border border-accent hover:border-accent-hover"
-          >
+          <div key={item.id} className=" rounded-2xl  mb-4 custom-border">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
               <div>
                 <h5 className="h4 font-bold">{item.role}</h5>
