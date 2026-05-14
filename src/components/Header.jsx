@@ -17,7 +17,7 @@ const Header = () => {
     <div className="2xl:hidden absolute z-40 left-0 top-0 right-0">
       <div className="container mx-auto">
         {/* Glass Effect Added Here */}
-        <div className="backdrop-blur-xl bg-white/10 border border-white/20 shadow-lg shadow-black/20 py-2 sm:py-4 rounded-b-4xl">
+        <div className="sm:backdrop-blur-none sm:bg-transparent sm:border-0 sm:shadow-none backdrop-blur-xl bg-white/10 border border-white/20 shadow-lg shadow-black/20 py-2 sm:py-4 rounded-b-4xl">
           <div className="flex justify-between items-center px-6">
             {/* logo */}
             <HeaderLogo />
