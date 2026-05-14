@@ -30,23 +30,26 @@ const personalInfo = [
 const AboutInfo = () => {
   return (
     <section className="w-full">
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+      <div className="mb-8 text-center p-4">
+        <h2 className="h2 font-bold"> Get to Know Me </h2>
+        <p className="para mt-2">quick overview of my personal information</p>
+      </div>
+      <div className="w-full p-2 rounded-4xl">
         {personalInfo.map((item) => {
           const Icon = item.icon;
 
           return (
             <div
               key={item.id}
-              className="flex items-start gap-4 rounded-2xl border border-accent hover:border-accent-hover bg-tertiary hover:bg-tertiary-hover p-4 backdrop-blur-sm transition-all duration-300 "
+              className="flex items-center gap-10 sm:gap-5 md:gap-10 custom-border rounded-3xl m-4"
             >
-              <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-accent/10">
-                <Icon className="text-accent size-6 " />
+              <div className="">
+                <Icon className="size-7" />
               </div>
 
               <div>
-                <h3 className="h5 font-extrabold">{item.title}</h3>
-
-                <p className="text-white  mt-1">{item.value}</p>
+                <h3 className="h4 font-bold">{item.title}</h3>
+                <p className="para">{item.value}</p>
               </div>
             </div>
           );
