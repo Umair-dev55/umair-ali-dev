@@ -1,106 +1,110 @@
 "use client";
-
-// Swiper
+// import swiper react components
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Swiper modules
-import { Pagination, Autoplay } from "swiper/modules";
-
-// Styles
+//import swiper styles
 import "swiper/css";
+import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css/pagination";
-
-const testimonials = [
-  {
-    id: 1,
-    name: "Ali Khan",
-    role: "Frontend Developer",
-    review:
-      "Amazing work. The website looks modern, fast, and fully responsive on every device.",
-  },
-  {
-    id: 2,
-    name: "Ahmed Raza",
-    role: "UI Designer",
-    review:
-      "Very professional experience. Clean code, smooth animations, and great attention to detail.",
-  },
-  {
-    id: 3,
-    name: "Usman Tariq",
-    role: "Business Owner",
-    review:
-      "My website speed improved significantly after the redesign. Everything feels smooth and optimized.",
-  },
-  {
-    id: 4,
-    name: "Hamza Ali",
-    role: "Ecommerce Store Owner",
-    review:
-      "The entire project was delivered on time and the final result exceeded expectations.",
-  },
-  {
-    id: 5,
-    name: "Bilal Ahmed",
-    role: "React Developer",
-    review:
-      "Great developer to work with. The UI was pixel perfect and performance was excellent.",
-  },
-];
-
+// icon
+import { FaQuoteLeft } from "react-icons/fa";
 const AboutTestimonials = () => {
+  const testimonials = [
+    {
+      name: "Michael Carter",
+      role: "CEO at NovaTech",
+      image:
+        "https://images.pexels.com/photos/8872492/pexels-photo-8872492.jpeg?auto=compress&cs=tinysrgb&w=800",
+      rating: 5,
+      review:
+        "Umair delivered a fast, modern, and highly responsive website. The attention to detail and smooth animations exceeded our expectations.",
+    },
+    {
+      name: "Sophia Williams",
+      role: "UI/UX Designer",
+      image:
+        "https://images.pexels.com/photos/10417390/pexels-photo-10417390.jpeg?auto=compress&cs=tinysrgb&w=800",
+      rating: 5,
+      review:
+        "Working with Umair was smooth and professional. He perfectly translated my designs into a pixel-perfect, animated website.",
+    },
+    {
+      name: "Daniel Thompson",
+      role: "Founder of BrightLabs",
+      image:
+        "https://images.pexels.com/photos/31869537/pexels-photo-31869537.jpeg?auto=compress&cs=tinysrgb&w=800",
+      rating: 5,
+      review:
+        "Excellent work! Delivered on time with clean code, great performance, and beautiful responsiveness across all devices.",
+    },
+
+    {
+      name: "James Anderson",
+      role: "Frontend Engineer",
+      image:
+        "https://images.pexels.com/photos/14589344/pexels-photo-14589344.jpeg?auto=compress&cs=tinysrgb&w=800",
+      rating: 5,
+      review:
+        "As a developer myself, I was impressed by the code quality and modern animations. Really strong in React & Next.js.",
+    },
+    {
+      name: "Olivia Martinez",
+      role: "Marketing Manager",
+      image:
+        "https://images.pexels.com/photos/31880922/pexels-photo-31880922.jpeg?auto=compress&cs=tinysrgb&w=800",
+      rating: 5,
+      review:
+        "The website feels alive with smooth animations and perfect responsiveness. Our engagement has noticeably increased.",
+    },
+  ];
   return (
-    <section className="flex overflow-x-hidden py-12">
-      <div className="max-w-2xl px-4 ">
-        {/* heading */}
-        <div className="text-center mb-10">
-          <h2 className="h2 text-3xl md:text-4xl font-bold text-white">
-            Client Testimonials
-          </h2>
-
-          <p className="text-gray-400 mt-3 para">
-            Feedback from clients and developers I have worked with.
-          </p>
-        </div>
-
-        {/* swiper */}
-        <Swiper
-          modules={[Pagination, Autoplay]}
-          slidesPerView={1}
-          centeredSlides={true}
-          loop={true}
-          autoplay={{
-            delay: 3000,
-            disableOnInteraction: false,
-          }}
-          pagination={{
-            clickable: true,
-          }}
-          spaceBetween={20}
-          className="max-w-60  xl:max-w-95 mx-auto pb-14"
-        >
-          {testimonials.map((testimonial) => (
-            <SwiperSlide key={testimonial.id}>
-              <div className="rounded-4xl  border border-accent hover:border-accent-hover bg-tertiary hover:bg-tertiary-hover  p-8 text-center min-h-[260px] flex flex-col justify-between">
-                {/* review */}
-                <p className="para text-gray-300 leading-relaxed text-[16px]">
-                  "{testimonial.review}"
-                </p>
-
-                {/* user */}
-                <div className="mt-8">
-                  <h3 className="h3 text-xl font-semibold text-white">
-                    {testimonial.name}
-                  </h3>
-
-                  <p className="para text-gray-400 mt-1">{testimonial.role}</p>
+    <div>
+      <div className="mb-8 text-center p-4">
+        <h2 className="h2 font-bold"> Trusted By Clients </h2>
+        <p className="para mt-2">
+          Feedback from clients on project quality, communication, and delivery.
+        </p>
+      </div>
+      <Swiper
+        modules={[Autoplay, Pagination]}
+        slidesPerView={1}
+        loop={true}
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        className="w-full max-w-[300px] md:max-w-[500px] bg-secondary rounded-3xl p-6"
+      >
+        {testimonials.map((person, index) => {
+          return (
+            <SwiperSlide key={index}>
+              <div className="flex flex-col gap-3  py-8 px-4 rounded-3xl  custom-border">
+                <div className="flex gap-3 items-center justify-between px-[4px] mb-20">
+                  <FaQuoteLeft className="text-accent text-4xl" />
+                  <div className="flex p-2 custom-border rounded-4xl">
+                    <img
+                      className="size-10 rounded-full"
+                      src={person.image}
+                      alt={person.name}
+                    />
+                    <div>
+                      <div className="text-[12px] font-bold">{person.role}</div>
+                      <div className="text-[12px]">{person.name}</div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div className="">{person.review}</div>
+                </div>
+                <div>
+                  {Array.from({ length: person.rating }).map((_, i) => (
+                    <span key={i} className="text-white text-xl">
+                      ★
+                    </span>
+                  ))}
                 </div>
               </div>
             </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
-    </section>
+          );
+        })}
+      </Swiper>
+    </div>
   );
 };
 
