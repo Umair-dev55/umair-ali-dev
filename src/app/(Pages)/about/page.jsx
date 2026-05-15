@@ -67,9 +67,9 @@ const about = () => {
           <HeroImageCard />
           <div>
             {/* Socials */}
-            <div className="md:absolute md:p-5 top-1/2 right-0 transform -translate-y-1/2">
+            <div className="xl:absolute xl:p-5 top-1/2 right-0 transform -translate-y-1/2">
               <Socials
-                containerStyles=" flex gap-4 md:flex-col justify-center"
+                containerStyles=" flex gap-4 xl:flex-col justify-center"
                 iconStyles="p-2 bg-accent rounded-full cursor-pointer"
               />
             </div>
