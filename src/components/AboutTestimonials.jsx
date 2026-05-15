@@ -69,7 +69,7 @@ const AboutTestimonials = () => {
         slidesPerView={1}
         loop={true}
         autoplay={{ delay: 3000, disableOnInteraction: false }}
-        className="w-full max-w-[300px] md:max-w-[500px] bg-secondary rounded-3xl p-6"
+        className="w-full max-w-[300px] xl:max-w-[500px] bg-secondary rounded-3xl p-6"
       >
         {testimonials.map((person, index) => {
           return (
