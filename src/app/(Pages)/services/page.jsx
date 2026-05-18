@@ -106,7 +106,7 @@ const services = () => {
                   <h2 className="h3">{item.title}</h2>
                 </div>
                 <div>
-                  <p className="font-light  w-full">{item.desc}</p>
+                  <p className="text-white/70 font-light text-sm leading-relaxed tracking-wide w-full">{item.desc}</p>
                 </div>
               </div>
             </SwiperSlide>
