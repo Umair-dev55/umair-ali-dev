@@ -30,7 +30,28 @@ const contact = () => {
           <div className="w-full">
             <div className="flex flex-col xl:flex-row gap-6 ">
               {/* info text */}
-              <div>info text</div>
+              <div className="flex-1 xl:w-[600px] flex flex-col gap-4 lg:gap-8">
+                <div className="flex items-center text-3xl xl:text-4xl font-bold">
+                  Let's Work Together
+                  <HiOutlineArrowLongRight className="ml-2" />
+                </div>
+                <div className="flex items-center gap-2">
+                  <HiOutlineMail className="text-accent" />
+                  <a href="mailto:[umair.dev55@gmail.com]">
+                    umair.dev55@gmail.com
+                  </a>
+                </div>
+                <div className="flex items-center gap-2">
+                  <HiOutlinePhone className="text-accent" />
+                  <a href="tel:+923086754944">+92 308 6754 944</a>
+                </div>
+                <div className="flex items-center gap-2">
+                  <HiOutlineMapPin className="text-accent" />
+                  <a href="https://maps.app.goo.gl/P1i84yUu6m93y67c7">
+                    Lahore, Pakistan
+                  </a>
+                </div>
+              </div>
               {/* form */}
               <div className="flex-1 w-full">
                 <form className="w-full">
@@ -99,7 +120,7 @@ const contact = () => {
                           <SelectItem className="text-sm" value="web">
                             Web Development
                           </SelectItem>
-                          <SelectItem className="text-sm" value="uiux">
+                          <SelectItem className="text-sm" value="ui/ux">
                             UI & UX Design
                           </SelectItem>
                           <SelectItem className="text-sm" value="wordpress">
@@ -107,6 +128,9 @@ const contact = () => {
                           </SelectItem>
                           <SelectItem className="text-sm" value="graphic">
                             Graphic Designing
+                          </SelectItem>
+                          <SelectItem className="text-sm" value="other">
+                            Other
                           </SelectItem>
                         </SelectContent>
                       </Select>
