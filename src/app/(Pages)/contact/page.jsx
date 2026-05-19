@@ -96,12 +96,16 @@ const contact = () => {
                           alignItemWithTrigger={false}
                           className="bg-tertiary border-white/30 text-white shadow-xl min-w-[--anchor-width] p-2"
                         >
-                          <SelectItem value="web">Web Development</SelectItem>
-                          <SelectItem value="uiux">UI & UX Design</SelectItem>
-                          <SelectItem value="wordpress">
+                          <SelectItem className="text-sm" value="web">
+                            Web Development
+                          </SelectItem>
+                          <SelectItem className="text-sm" value="uiux">
+                            UI & UX Design
+                          </SelectItem>
+                          <SelectItem className="text-sm" value="wordpress">
                             Wordpress Development
                           </SelectItem>
-                          <SelectItem value="graphic">
+                          <SelectItem className="text-sm" value="graphic">
                             Graphic Designing
                           </SelectItem>
                         </SelectContent>
@@ -117,15 +121,12 @@ const contact = () => {
                         name="message"
                         placeholder="Type your message here..."
                         required
-                        className="xl:h-60 lg:h-52 h-40 bg-tertiary/50 border-white/30 text-white px-6 data-placeholder:text-white/50 focus:ring-accent/50"
+                        className=" h-30 bg-tertiary/50 border-white/30 text-white px-6 data-placeholder:text-white/50 focus:ring-accent/50"
                       />
                     </div>
                     {/* submit button */}
                     <div className="flex xl:justify-start lg:justify-center justify-center w-full">
-                      <button
-                        className="btn  btn-lg btn-accent mt-2"
-                        type="submit"
-                      >
+                      <button className="btn  btn-lg btn-accent" type="submit">
                         Send Message
                         <HiOutlineArrowLongRight className="ml-2" />
                       </button>
