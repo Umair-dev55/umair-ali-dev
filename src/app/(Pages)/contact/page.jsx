@@ -2,20 +2,27 @@
 import { motion } from "framer-motion";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
-
 import { Textarea } from "@/components/ui/textarea";
 import { HiOutlineMapPin, HiOutlineArrowLongRight } from "react-icons/hi2";
 import { HiOutlinePhone, HiOutlineMail } from "react-icons/hi";
-import { Button } from "@/components/ui/button";
 import {
   Select,
   SelectContent,
-  SelectGroup,
   SelectItem,
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { sendEmail } from "@/lib/resend";
+
 const contact = () => {
+  const handleSend = async (formData) => {
+    const result = await sendEmail(formData);
+    if (result.success) {
+      alert("Your message has been sent successfully!");
+    } else {
+      alert("Failed to send message. Please try again later.");
+    }
+  };
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -54,7 +61,7 @@ const contact = () => {
               </div>
               {/* form */}
               <div className="flex-1 w-full">
-                <form className="w-full">
+                <form className="w-full" action={handleSend}>
                   <div className="flex flex-col gap-2 lg:gap-4 w-full">
                     {/* Name Row */}
                     <div className="flex flex-col lg:flex-row gap-6 lg:gap-10 w-full">
@@ -67,6 +74,7 @@ const contact = () => {
                         <Input
                           type="text"
                           id="firstName"
+                          name="firstName"
                           placeholder="First name"
                           required
                           className=""
@@ -81,6 +89,7 @@ const contact = () => {
                         <Input
                           type="text"
                           id="lastName"
+                          name="lastName"
                           placeholder="Last name"
                           required
                         />
@@ -95,6 +104,7 @@ const contact = () => {
                       <Input
                         type="email"
                         id="email"
+                        name="email"
                         placeholder="youremail@gmail.com"
                         required
                         className=""
@@ -150,7 +160,7 @@ const contact = () => {
                     </div>
                     {/* submit button */}
                     <div className="flex xl:justify-start lg:justify-center justify-center w-full">
-                      <button className="btn  btn-lg btn-accent" type="submit">
+                      <button className="btn btn-lg btn-accent" type="submit">
                         Send Message
                         <HiOutlineArrowLongRight className="ml-2" />
                       </button>
