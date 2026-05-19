@@ -81,17 +81,18 @@ const contact = () => {
                         />
                       </div>
                       {/* last name */}
-                      <div className="w-full">
-                        <Label className="flex mb-2" htmlFor="lastName">
+                      <div className="w-full relative z-20">
+                        <Label className="flex mb-2" htmlFor="user_last_name">
                           Last Name{" "}
                           <span className="inline text-accent">*</span>
                         </Label>
                         <Input
                           type="text"
-                          id="lastName"
+                          id="user_last_name"
                           name="lastName"
                           placeholder="Last name"
                           required
+                          className="relative z-20"
                         />
                       </div>
                     </div>
