@@ -34,7 +34,7 @@ const Home = () => {
                   1000,
                   "React Developer",
                   1000,
-                  "Next.js Developer",
+                  "Next js Developer",
                   1000,
                   "WordPress Developer",
                   1000,
