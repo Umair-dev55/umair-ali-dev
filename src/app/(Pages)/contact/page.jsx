@@ -42,21 +42,32 @@ const contact = () => {
                   Let's Work Together
                   <HiOutlineArrowLongRight className="ml-2" />
                 </div>
+
                 <div className="flex items-center gap-2">
                   <HiOutlineMail className="text-accent" />
-                  <a href="mailto:[umair.dev55@gmail.com]">
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=umair.dev55@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     umair.dev55@gmail.com
                   </a>
                 </div>
+
                 <div className="flex items-center gap-2">
                   <HiOutlinePhone className="text-accent" />
-                  <a href="tel:+923086754944">+92 308 6754 944</a>
+                  <a
+                    href="https://wa.me/923086754944"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    +92 308 6754 944
+                  </a>
                 </div>
+
                 <div className="flex items-center gap-2">
                   <HiOutlineMapPin className="text-accent" />
-                  <a href="https://maps.app.goo.gl/P1i84yUu6m93y67c7">
-                    Lahore, Pakistan
-                  </a>
+                  <span>Lahore, Pakistan</span>
                 </div>
               </div>
               {/* form */}
