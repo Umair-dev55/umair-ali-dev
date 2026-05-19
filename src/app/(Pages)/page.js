@@ -1,12 +1,12 @@
 "use client";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
-import { MoveUpRight, PhoneCall, MailPlus } from "lucide-react";
+import { PhoneCall, MailPlus } from "lucide-react";
 import Socials from "../../components/Socials";
 import Pattern from "../../components/Pattern";
 import Gradiant from "@/components/Gradiant";
 import HeroImageCard from "@/components/HeroImageCard";
-
+import { FaWhatsapp } from "react-icons/fa6";
 const Home = () => {
   return (
     <motion.section
@@ -45,19 +45,14 @@ const Home = () => {
               Passionate about building fast, intuitive, and visually stunning
               web experiences using modern technologies.
             </p>
-            {/* button center in small and left in large */}
             <button className="min-w-full flex-x-center md:min-w-0 pb-6">
-              {/* <div className="btn btn-lg btn-accent max-w-15  gap-2 ">
-                <span className="">Let's Talk.</span>
-                <MoveUpRight />
-              </div> */}
               <a
                 href="https://wa.me/923086754944"
                 target="_blank"
                 className="btn btn-lg btn-accent max-w-15 gap-2 flex items-center"
               >
                 <span>Let's Talk.</span>
-                <MoveUpRight />
+                <FaWhatsapp size={28} />
               </a>
             </button>
             <div className="hidden">
