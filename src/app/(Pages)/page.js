@@ -32,9 +32,13 @@ const Home = () => {
                 sequence={[
                   "Frontend Developer",
                   1000,
-                  "Next JS Developer",
+                  "React Developer",
                   1000,
-                  "React JS Developer",
+                  "Next.js Developer",
+                  1000,
+                  "WordPress Developer",
+                  1000,
+                  "Sitecore Developer",
                   1000,
                 ]}
                 speed={50}
