@@ -34,12 +34,12 @@ const contact = () => {
               {/* form */}
               <div className="flex-1 w-full">
                 <form className="w-full">
-                  <div className="flex flex-col gap-6 lg:gap-8 w-full">
+                  <div className="flex flex-col gap-2 lg:gap-4 w-full">
                     {/* Name Row */}
                     <div className="flex flex-col lg:flex-row gap-6 lg:gap-10 w-full">
                       {/* first name */}
                       <div className="w-full">
-                        <Label className="flex mb-3" htmlFor="firstName">
+                        <Label className="flex mb-2" htmlFor="firstName">
                           First Name{" "}
                           <span className="inline text-accent">*</span>
                         </Label>
@@ -53,7 +53,7 @@ const contact = () => {
                       </div>
                       {/* last name */}
                       <div className="w-full">
-                        <Label className="flex mb-3" htmlFor="lastName">
+                        <Label className="flex mb-2" htmlFor="lastName">
                           Last Name{" "}
                           <span className="inline text-accent">*</span>
                         </Label>
@@ -68,7 +68,7 @@ const contact = () => {
 
                     {/* Email Row */}
                     <div className="w-full">
-                      <Label className="flex mb-3" htmlFor="email">
+                      <Label className="flex mb-2" htmlFor="email">
                         Email <span className="inline text-accent">*</span>
                       </Label>
                       <Input
@@ -81,7 +81,7 @@ const contact = () => {
                     </div>
                     {/* select  */}
                     <div className="w-full">
-                      <Label className="flex mb-3" htmlFor="name">
+                      <Label className="flex mb-2" htmlFor="name">
                         i' m Intrested in{" "}
                         <span className="inline text-accent">*</span>
                       </Label>
@@ -113,7 +113,7 @@ const contact = () => {
                     </div>
                     {/* Textarea  */}
                     <div className="w-full">
-                      <Label className="flex mb-3" htmlFor="message">
+                      <Label className="flex mb-2" htmlFor="message">
                         Message <span className="inline text-accent">*</span>
                       </Label>
                       <Textarea
