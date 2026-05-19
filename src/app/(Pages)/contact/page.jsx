@@ -106,6 +106,19 @@ const contact = () => {
                         </SelectContent>
                       </Select>
                     </div>
+                    {/* Textarea  */}
+                    <div className="w-full">
+                      <Label className="flex mb-3" htmlFor="message">
+                        Message <span className="inline text-accent">*</span>
+                      </Label>
+                      <Textarea
+                        id="message"
+                        name="message"
+                        placeholder="Type your message here..."
+                        required
+                        className="h-60 bg-tertiary/50 border-white/30 text-white px-6 data-placeholder:text-white/50 focus:ring-accent/50"
+                      />
+                    </div>
                   </div>
                 </form>
               </div>
