@@ -1,7 +1,18 @@
 "use client";
 import { motion } from "framer-motion";
-import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
-import HeroImageCard from "@/components/HeroImageCard";
+import { Label } from "@/components/ui/label";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { HiOutlineMapPin, HiOutlineArrowLongRight } from "react-icons/hi2";
+import { HiOutlinePhone, HiOutlineMail } from "react-icons/hi";
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 const contact = () => {
   return (
     <motion.section
@@ -10,42 +21,90 @@ const contact = () => {
         opacity: 1,
         transition: { delay: 1.5, duration: 0.4, ease: "easeIn" },
       }}
-      className="py-15 sm:py-0"
+      className="h-screen flex sm:flex-y-center py-24 xl:py-0"
     >
-      <div className="grid p-5 sm:grid-cols-2 min-h-screen place-items-center">
-        {/* 1st div */}
-        <div className="">
-          <HeroImageCard />
-        </div>
-        {/* 2nd div */}
+      <div className="container mx-auto w-full px-4">
+        <div className="w-full h-full flex flex-col items-center xl:justify-center">
+          <div className="w-full">
+            <div className="flex flex-col xl:flex-row gap-6 ">
+              {/* info text */}
+              <div>info text</div>
+              {/* form */}
+              <div className="flex-1 w-full">
+                <form className="w-full">
+                  <div className="flex flex-col gap-6 lg:gap-8 w-full">
+                    {/* Name Row */}
+                    <div className="flex flex-col lg:flex-row gap-6 lg:gap-10 w-full">
+                      {/* first name */}
+                      <div className="w-full">
+                        <Label className="flex mb-3" htmlFor="firstName">
+                          First Name{" "}
+                          <span className="inline text-accent">*</span>
+                        </Label>
+                        <Input
+                          type="text"
+                          id="firstName"
+                          placeholder="First name"
+                          required
+                          className=""
+                        />
+                      </div>
+                      {/* last name */}
+                      <div className="w-full">
+                        <Label className="flex mb-3" htmlFor="lastName">
+                          Last Name{" "}
+                          <span className="inline text-accent">*</span>
+                        </Label>
+                        <Input
+                          type="text"
+                          id="lastName"
+                          placeholder="Last name"
+                          required
+                        />
+                      </div>
+                    </div>
 
-        <div className="text-center md:text-left">
-          <div className="flex justify-evenly flex-col items-center md:items-start gap-6">
-            <h1 className="h1">
-              Hi ! I Am Umair Ali,
-              <br />
-            </h1>{" "}
-            <h1 className="h1  text-accent font-extrabold"></h1>
-            <p className="para">
-              Passionate contact building fast, intuitive, and visually stunning
-              web experiences using modern technologies.
-            </p>
-            <div className="hidden">
-              <div className="md:flex gap-4 text-lg">
-                {/* Phone */}
-                <div className="flex gap-2 justify-center lg:justify-start">
-                  <span className="text-accent"></span>
-                  <span>+92 308 6754044</span>
-                </div>
-                {/* mail */}
-                <div className="hidden lg:flex gap-2">
-                  <span className="text-accent"></span>
-                  <span className="">umair.dev55@gmail.com</span>
-                </div>
+                    {/* Email Row */}
+                    <div className="w-full">
+                      <Label className="flex mb-3" htmlFor="email">
+                        Email <span className="inline text-accent">*</span>
+                      </Label>
+                      <Input
+                        type="email"
+                        id="email"
+                        placeholder="youremail@gmail.com"
+                        required
+                        className=""
+                      />
+                    </div>
+                  </div>
+
+                  {/* service request */}
+                  <div className="w-full mt-6">
+                    <Label className="flex mb-3 text-2xl" htmlFor="service">
+                      I am interested in
+                    </Label>
+                    <Select>
+                      <SelectTrigger>
+                        <SelectValue placeholder="Service" />
+                      </SelectTrigger>
+                      <SelectContent className="bg-tertiary">
+                        <SelectItem value="web-development">
+                          Web Development
+                        </SelectItem>
+                        <SelectItem value="ui-design">UI/UX Design</SelectItem>
+                        <SelectItem value="content-writing">
+                          Content Writing
+                        </SelectItem>
+                        <SelectItem value="social-media">
+                          Social Media
+                        </SelectItem>
+                      </SelectContent>
+                    </Select>
+                  </div>
+                </form>
               </div>
             </div>
-            {/* Socials */}
-            <div className="md:absolute md:p-5 top-1/2 right-0 transform -translate-y-1/2"></div>
           </div>
         </div>
       </div>
