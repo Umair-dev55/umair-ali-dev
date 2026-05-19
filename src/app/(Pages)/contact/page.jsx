@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
+
 import { Textarea } from "@/components/ui/textarea";
 import { HiOutlineMapPin, HiOutlineArrowLongRight } from "react-icons/hi2";
 import { HiOutlinePhone, HiOutlineMail } from "react-icons/hi";
@@ -77,30 +78,34 @@ const contact = () => {
                         className=""
                       />
                     </div>
-                  </div>
-
-                  {/* service request */}
-                  <div className="w-full mt-6">
-                    <Label className="flex mb-3 text-2xl" htmlFor="service">
-                      I am interested in
-                    </Label>
-                    <Select>
-                      <SelectTrigger>
-                        <SelectValue placeholder="Service" />
-                      </SelectTrigger>
-                      <SelectContent className="bg-tertiary">
-                        <SelectItem value="web-development">
-                          Web Development
-                        </SelectItem>
-                        <SelectItem value="ui-design">UI/UX Design</SelectItem>
-                        <SelectItem value="content-writing">
-                          Content Writing
-                        </SelectItem>
-                        <SelectItem value="social-media">
-                          Social Media
-                        </SelectItem>
-                      </SelectContent>
-                    </Select>
+                    {/* select  */}
+                    <div className="w-full">
+                      <Label className="flex mb-3" htmlFor="name">
+                        i' m Intrested in{" "}
+                        <span className="inline text-accent">*</span>
+                      </Label>
+                      <Select name="service" required>
+                        <SelectTrigger
+                          id="service"
+                          className="w-full !h-12 bg-tertiary/50 border-white/30 text-white px-6 data-placeholder:text-white/50 focus:ring-accent/50"
+                        >
+                          <SelectValue placeholder="Choose Here" />
+                        </SelectTrigger>
+                        <SelectContent
+                          alignItemWithTrigger={false}
+                          className="bg-tertiary border-white/30 text-white shadow-xl min-w-[--anchor-width] p-2"
+                        >
+                          <SelectItem value="web">Web Development</SelectItem>
+                          <SelectItem value="uiux">UI & UX Design</SelectItem>
+                          <SelectItem value="wordpress">
+                            Wordpress Development
+                          </SelectItem>
+                          <SelectItem value="graphic">
+                            Graphic Designing
+                          </SelectItem>
+                        </SelectContent>
+                      </Select>
+                    </div>
                   </div>
                 </form>
               </div>
