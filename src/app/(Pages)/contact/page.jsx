@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { HiOutlineMapPin, HiOutlineArrowLongRight } from "react-icons/hi2";
 import { HiOutlinePhone, HiOutlineMail } from "react-icons/hi";
+import { Button } from "@/components/ui/button";
 import {
   Select,
   SelectContent,
@@ -116,8 +117,18 @@ const contact = () => {
                         name="message"
                         placeholder="Type your message here..."
                         required
-                        className="h-60 bg-tertiary/50 border-white/30 text-white px-6 data-placeholder:text-white/50 focus:ring-accent/50"
+                        className="xl:h-60 lg:h-52 h-40 bg-tertiary/50 border-white/30 text-white px-6 data-placeholder:text-white/50 focus:ring-accent/50"
                       />
+                    </div>
+                    {/* submit button */}
+                    <div className="flex xl:justify-start lg:justify-center justify-center w-full">
+                      <button
+                        className="btn  btn-lg btn-accent mt-2"
+                        type="submit"
+                      >
+                        Send Message
+                        <HiOutlineArrowLongRight className="ml-2" />
+                      </button>
                     </div>
                   </div>
                 </form>
