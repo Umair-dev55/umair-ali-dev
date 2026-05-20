@@ -1,4 +1,5 @@
 "use client";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
@@ -15,12 +16,19 @@ import {
 import { sendEmail } from "@/lib/resend";
 
 const contact = () => {
-  const handleSend = async (formData) => {
+  const [isPending, setIsPending] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsPending(true);
+    const formData = new FormData(e.currentTarget);
     const result = await sendEmail(formData);
+    setIsPending(false);
     if (result.success) {
       alert("Your message has been sent successfully!");
+      e.target.reset();
     } else {
-      alert("Failed to send message. Please try again later.");
+      alert(`Failed to send message: ${result.error || "Please check your Resend API Key setup."}`);
     }
   };
   return (
@@ -72,7 +80,7 @@ const contact = () => {
               </div>
               {/* form */}
               <div className="flex-1 w-full">
-                <form className="w-full" action={handleSend}>
+                <form className="w-full" onSubmit={handleSubmit}>
                   <div className="flex flex-col gap-2 lg:gap-4 w-full">
                     {/* Name Row */}
                     <div className="flex flex-col lg:flex-row gap-6 lg:gap-10 w-full">
@@ -172,9 +180,9 @@ const contact = () => {
                     </div>
                     {/* submit button */}
                     <div className="flex xl:justify-start lg:justify-center justify-center w-full">
-                      <button className="btn btn-lg btn-accent" type="submit">
-                        Send Message
-                        <HiOutlineArrowLongRight className="ml-2" />
+                      <button className="btn btn-lg btn-accent disabled:opacity-50" type="submit" disabled={isPending}>
+                        {isPending ? "Sending..." : "Send Message"}
+                        {!isPending && <HiOutlineArrowLongRight className="ml-2" />}
                       </button>
                     </div>
                   </div>
