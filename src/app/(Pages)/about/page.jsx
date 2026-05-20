@@ -21,10 +21,10 @@ const about = () => {
     >
       <div className="grid sm:grid-cols-2 place-items-center sm:h-screen flex-col md:flex-row mx-auto">
         {/* 2nd div (Content) - Show first on mobile */}
-        <div className="text-left order-1 sm:order-2 p-4 w-full">
+        <div className="text-left order-1 sm:order-2  w-full">
           <ScrollArea className="h-auto sm:h-[calc(100vh-90px)] w-full">
             <div className="flex justify-evenly flex-col items-start gap-6">
-              <div className="text-center sm:text-start *:py-2">
+              <div className="text-center sm:text-start *:py-2 pt-16 sm:pt-0">
                 <div className="flex items-center gap-2">
                   <span className="w-2 h-2 bg-accent rounded-full"></span>
                   <span className="">About Me</span>
