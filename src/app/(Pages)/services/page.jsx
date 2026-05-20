@@ -82,7 +82,7 @@ const services = () => {
             disableOnInteraction: false,
           }}
           modules={[Pagination, Autoplay]}
-          className="w-full ]"
+          className="w-full max-w-full overflow-hidden"
           breakpoints={{
             0: {
               slidesPerView: 1,

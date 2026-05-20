@@ -41,7 +41,7 @@ const AboutInfo = () => {
           return (
             <div
               key={item.id}
-              className="flex items-center gap-10 sm:gap-5 md:gap-10 custom-border rounded-3xl m-4"
+              className="flex items-center gap-4 sm:gap-6 md:gap-10 custom-border rounded-3xl m-4"
             >
               <div className="">
                 <Icon className="size-7" />
