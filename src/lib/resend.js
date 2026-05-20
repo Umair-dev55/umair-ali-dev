@@ -2,17 +2,17 @@
 
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+export const sendEmail = async (data) => {
+  if (!process.env.RESEND_API_KEY) {
+    console.error("RESEND_API_KEY is not defined in environment variables!");
+    return { success: false, error: "RESEND_API_KEY is not defined in environment variables." };
+  }
 
-export const sendEmail = async (formData) => {
-  const firstName = formData.get("firstName");
-  const lastName = formData.get("lastName");
-  const email = formData.get("email");
-  const service = formData.get("service");
-  const message = formData.get("message");
+  const resend = new Resend(process.env.RESEND_API_KEY);
+  const { firstName, lastName, email, service, message } = data;
 
   try {
-    const data = await resend.emails.send({
+    const res = await resend.emails.send({
       from: "Portfolio Contact <onboarding@resend.dev>",
       to: "umair.dev55@gmail.com",
       subject: `New Contact Request: ${service} from ${firstName} ${lastName}`,
@@ -25,9 +25,9 @@ export const sendEmail = async (formData) => {
         <p>${message}</p>
       `,
     });
-    return { success: true, data };
+    return { success: true, data: res };
   } catch (error) {
     console.error("Error sending email:", error);
-    return { success: false, error: error.message };
+    return { success: false, error: error.message || error };
   }
 };

@@ -21,14 +21,29 @@ const contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsPending(true);
-    const formData = new FormData(e.currentTarget);
-    const result = await sendEmail(formData);
-    setIsPending(false);
-    if (result.success) {
-      alert("Your message has been sent successfully!");
-      e.target.reset();
-    } else {
-      alert(`Failed to send message: ${result.error || "Please check your Resend API Key setup."}`);
+    try {
+      const formData = new FormData(e.currentTarget);
+      const data = {
+        firstName: formData.get("firstName"),
+        lastName: formData.get("lastName"),
+        email: formData.get("email"),
+        service: formData.get("service"),
+        message: formData.get("message"),
+      };
+      
+      const result = await sendEmail(data);
+      setIsPending(false);
+      
+      if (result && result.success) {
+        alert("Your message has been sent successfully!");
+        e.target.reset();
+      } else {
+        alert(`Failed to send message: ${result?.error || "Please check your Resend API Key setup."}`);
+      }
+    } catch (err) {
+      setIsPending(false);
+      console.error("Client form submit error:", err);
+      alert(`An error occurred: ${err.message || err}`);
     }
   };
   return (
@@ -100,7 +115,7 @@ const contact = () => {
                         />
                       </div>
                       {/* last name */}
-                      <div className="w-full relative z-20">
+                      <div className="w-full">
                         <Label className="flex mb-2" htmlFor="user_last_name">
                           Last Name{" "}
                           <span className="inline text-accent">*</span>
@@ -111,7 +126,7 @@ const contact = () => {
                           name="lastName"
                           placeholder="Last name"
                           required
-                          className="relative z-20"
+                          className=""
                         />
                       </div>
                     </div>
@@ -132,8 +147,8 @@ const contact = () => {
                     </div>
                     {/* select  */}
                     <div className="w-full">
-                      <Label className="flex mb-2" htmlFor="name">
-                        i' m Intrested in{" "}
+                      <Label className="flex mb-2" htmlFor="service">
+                        i'm Interested in{" "}
                         <span className="inline text-accent">*</span>
                       </Label>
                       <Select name="service" required>
