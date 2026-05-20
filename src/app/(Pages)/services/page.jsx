@@ -9,6 +9,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import Socials from "@/components/Socials";
 const UserData = [
   {
     title: "Frontend Developer",
@@ -55,7 +56,7 @@ const services = () => {
         opacity: 1,
         transition: { delay: 1.5, duration: 0.4, ease: "easeIn" },
       }}
-      className="sm:py-0 flex-y-center min-h-screen px-2"
+      className="pt-18 sm:pt-0 flex-y-center min-h-screen px-2"
     >
       <div className="container mx-auto w-full flex flex-col gap-16">
         {/* text */}
@@ -112,6 +113,13 @@ const services = () => {
             </SwiperSlide>
           ))}
         </Swiper>
+      </div>
+      {/* Socials */}
+      <div className="hidden xl:block xl:absolute xl:p-5 top-1/2 right-0 transform -translate-y-1/2">
+        <Socials
+          containerStyles="flex gap-4 xl:flex-col justify-center"
+          iconStyles="p-2 bg-accent rounded-full cursor-pointer"
+        />
       </div>
     </motion.section>
   );
