@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
             <div className="text-[18px] hidden 2xl:flex  w-[285px] h-screen bg-secondary ">
               <MainNav />
             </div>
-            <div className="relative w-full px-[15px] mx-auto max-w-[1130px] overflow-x-hidden overflow-y-auto sm:h-screen sm:overflow-hidden">
+            <div className="w-full px-[15px] mx-auto max-w-[1130px] overflow-x-hidden overflow-y-auto sm:h-screen sm:overflow-hidden">
               <header>
                 <Header />
               </header>
