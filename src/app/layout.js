@@ -7,13 +7,22 @@ import PageTransition from "@/components/PageTransition";
 import MainNav from "@/components/MainNav";
 import Header from "@/components/Header";
 export const metadata = {
-  title: "Umair Ali - Portfolio",
+  title:
+    "Muhammad Ali | Frontend Developer | React, Next.js, WordPress & Sitecore",
   description:
-    "React/Next.js Developer Experienced in building responsive and user-friendly web applications.",
+    "Frontend Developer specializing in React.js, Next.js, WordPress, Sitecore, and modern web development.",
   verification: {
     google: "2UCnFO3Hs6Ui_qLcYaGkbJkpKy27W03S0eKMkFPliJU",
   },
 };
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <body>{children}</body>
+    </html>
+  );
+}
 
 const cinzel = Cinzel({
   subsets: ["latin"],
