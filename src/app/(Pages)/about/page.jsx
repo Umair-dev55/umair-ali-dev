@@ -9,6 +9,7 @@ import AboutSkills from "@/components/AboutSkills";
 import Journey from "@/components/Journey";
 import Socials from "@/components/Socials";
 import Pattern from "@/components/Pattern";
+import Gradiant from "@/components/Gradiant";
 
 const about = () => {
   return (
@@ -21,6 +22,7 @@ const about = () => {
       className=" sm:py-0  px-2"
     >
       <Pattern />
+      <Gradiant />
       <div className="grid sm:grid-cols-2 place-items-center sm:h-screen flex-col md:flex-row mx-auto">
         {/* 2nd div (Content) - Show first on mobile */}
         <div className="text-left order-1 sm:order-2  w-full">
