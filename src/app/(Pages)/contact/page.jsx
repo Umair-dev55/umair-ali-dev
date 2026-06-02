@@ -14,6 +14,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { sendEmail } from "@/lib/resend";
+import Pattern from "@/components/Pattern";
 
 const contact = () => {
   const [isPending, setIsPending] = useState(false);
@@ -30,15 +31,17 @@ const contact = () => {
         service: formData.get("service"),
         message: formData.get("message"),
       };
-      
+
       const result = await sendEmail(data);
       setIsPending(false);
-      
+
       if (result && result.success) {
         alert("Your message has been sent successfully!");
         e.target.reset();
       } else {
-        alert(`Failed to send message: ${result?.error || "Please check your Resend API Key setup."}`);
+        alert(
+          `Failed to send message: ${result?.error || "Please check your Resend API Key setup."}`,
+        );
       }
     } catch (err) {
       setIsPending(false);
@@ -55,6 +58,7 @@ const contact = () => {
       }}
       className="h-screen flex sm:flex-y-center py-24 xl:py-0"
     >
+      <Pattern />
       <div className="container mx-auto w-full px-4">
         <div className="w-full h-full flex flex-col items-center xl:justify-center">
           <div className="w-full">
@@ -195,9 +199,15 @@ const contact = () => {
                     </div>
                     {/* submit button */}
                     <div className="flex xl:justify-start lg:justify-center justify-center w-full">
-                      <button className="btn btn-lg btn-accent disabled:opacity-50" type="submit" disabled={isPending}>
+                      <button
+                        className="btn btn-lg btn-accent disabled:opacity-50"
+                        type="submit"
+                        disabled={isPending}
+                      >
                         {isPending ? "Sending..." : "Send Message"}
-                        {!isPending && <HiOutlineArrowLongRight className="ml-2" />}
+                        {!isPending && (
+                          <HiOutlineArrowLongRight className="ml-2" />
+                        )}
                       </button>
                     </div>
                   </div>

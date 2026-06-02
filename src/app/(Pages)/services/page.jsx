@@ -10,6 +10,7 @@ import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import Socials from "@/components/Socials";
+import Pattern from "@/components/Pattern";
 const UserData = [
   {
     title: "Frontend Developer",
@@ -58,6 +59,7 @@ const services = () => {
       }}
       className="pt-18 sm:pt-0 flex-y-center min-h-screen px-2"
     >
+      <Pattern />
       <div className="container mx-auto w-full flex flex-col gap-16">
         {/* text */}
         <div className="flex flex-col xl:flex-row  gap-8 items-start xl:justify-between xl:items-center">
@@ -107,7 +109,9 @@ const services = () => {
                   <h2 className="h3">{item.title}</h2>
                 </div>
                 <div>
-                  <p className="text-white/70 font-light text-sm leading-relaxed tracking-wide w-full">{item.desc}</p>
+                  <p className="text-white/70 font-light text-sm leading-relaxed tracking-wide w-full">
+                    {item.desc}
+                  </p>
                 </div>
               </div>
             </SwiperSlide>
