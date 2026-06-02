@@ -2,8 +2,7 @@
 import { motion } from "framer-motion";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import HeroImageCard from "@/components/HeroImageCard";
-import Pattern from "@/components/Pattern";
-import Gradiant from "@/components/Gradiant";
+
 const work = () => {
   return (
     <motion.section
@@ -14,8 +13,6 @@ const work = () => {
       }}
       className="py-15 sm:py-0"
     >
-      <Pattern />
-      <Gradiant />
       <div className="grid p-5 sm:grid-cols-2 min-h-screen place-items-center">
         {/* 1st div */}
         <div className="">

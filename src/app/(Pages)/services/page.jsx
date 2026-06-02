@@ -10,8 +10,6 @@ import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import Socials from "@/components/Socials";
-import Pattern from "@/components/Pattern";
-import Gradiant from "@/components/Gradiant";
 const UserData = [
   {
     title: "Frontend Developer",
@@ -60,8 +58,6 @@ const services = () => {
       }}
       className="pt-18 sm:pt-0 flex-y-center min-h-screen px-2"
     >
-      <Pattern />
-      <Gradiant />
       <div className="container mx-auto w-full flex flex-col gap-16">
         {/* text */}
         <div className="flex flex-col xl:flex-row  gap-8 items-start xl:justify-between xl:items-center">

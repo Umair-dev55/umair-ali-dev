@@ -14,8 +14,6 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { sendEmail } from "@/lib/resend";
-import Pattern from "@/components/Pattern";
-import Gradiant from "@/components/Gradiant";
 
 const contact = () => {
   const [isPending, setIsPending] = useState(false);
@@ -59,8 +57,6 @@ const contact = () => {
       }}
       className="h-screen flex sm:flex-y-center py-24 xl:py-0"
     >
-      <Pattern />
-      <Gradiant />
       <div className="container mx-auto w-full px-4">
         <div className="w-full h-full flex flex-col items-center xl:justify-center">
           <div className="w-full">

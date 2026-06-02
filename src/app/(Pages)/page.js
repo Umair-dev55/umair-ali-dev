@@ -3,8 +3,6 @@ import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import { PhoneCall, MailPlus } from "lucide-react";
 import Socials from "../../components/Socials";
-import Pattern from "../../components/Pattern";
-import Gradiant from "@/components/Gradiant";
 import HeroImageCard from "@/components/HeroImageCard";
 import { FaWhatsapp } from "react-icons/fa6";
 const Home = () => {
@@ -17,9 +15,6 @@ const Home = () => {
       }}
       className="py-15 sm:py-0 overflow-x-hidden"
     >
-      {/* Pattern */}
-      <Pattern />
-      <Gradiant />
       <div className="grid p-5 sm:grid-cols-2 min-h-screen place-items-center">
         <div className="text-center md:text-left">
           <div className="flex justify-evenly flex-col items-center md:items-start gap-6">

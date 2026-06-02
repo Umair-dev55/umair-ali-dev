@@ -6,6 +6,7 @@ import RectangleTransition from "@/components/RectangleTransition";
 import PageTransition from "@/components/PageTransition";
 import MainNav from "@/components/MainNav";
 import Header from "@/components/Header";
+import Pattern from "@/components/Pattern";
 export const metadata = {
   title:
     "Muhammad Ali | Frontend Developer | React, Next.js, WordPress & Sitecore",
@@ -41,7 +42,11 @@ export default function RootLayout({ children }) {
               <header>
                 <Header />
               </header>
-              <div>{children}</div>
+              <div>
+                <Pattern />
+                <Gradiant />
+                {children}
+              </div>
             </div>
           </div>
         </PageTransition>
