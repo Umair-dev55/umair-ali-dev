@@ -58,7 +58,7 @@ const services = () => {
       }}
       className="pt-18 sm:pt-0 flex-y-center min-h-screen px-2"
     >
-      <div className="container mx-auto w-full flex flex-col gap-16">
+      <div className="container mx-auto w-full flex flex-col gap-8">
         {/* text */}
         <div className="flex flex-col xl:flex-row  gap-8 items-start xl:justify-between xl:items-center">
           {/* heading */}
@@ -100,8 +100,8 @@ const services = () => {
             <SwiperSlide key={index} className="h-[284px]">
               <div className="rounded-2xl custom-border h-[284px] flex  flex-col justify-between p-6">
                 <div className="flex justify-between">
-                  <item.icon className="w-12 h-12 text-accent" />
-                  <GoArrowUpRight className="bg-accent size-12 rounded-full" />
+                  <item.icon className="w-10 h-10 text-accent" />
+                  <GoArrowUpRight className="bg-accent size-10 p-2 rounded-full" />
                 </div>
                 <div>
                   <h2 className="h3">{item.title}</h2>
