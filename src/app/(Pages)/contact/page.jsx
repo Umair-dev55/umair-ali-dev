@@ -156,7 +156,7 @@ const contact = () => {
                       <Select name="service" required>
                         <SelectTrigger
                           id="service"
-                          className="w-full !h-12 bg-tertiary/50 border-white/30 text-white px-6 data-placeholder:text-white/50 focus:ring-accent/50"
+                          className="w-full h-12 bg-tertiary/50 border-white/30 text-white px-6 data-placeholder:text-white/50 focus:ring-accent/50"
                         >
                           <SelectValue placeholder="Choose Here" />
                         </SelectTrigger>
