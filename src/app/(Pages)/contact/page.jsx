@@ -220,3 +220,8 @@ const contact = () => {
 };
 
 export default contact;
+
+// pending work
+// card layout
+// projects add with thumbnail
+// and link
