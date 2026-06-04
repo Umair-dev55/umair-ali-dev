@@ -133,7 +133,7 @@ const work = () => {
         </h2>
 
         <Tabs defaultValue={categories[0]} className="w-full flex flex-col">
-          <TabsList className="">
+          <TabsList className="flex flex-wrap gap-2">
             {categories.map((category) => (
               <TabsTrigger
                 className="custom-border px-4 py-2 border-accent rounded-full"
