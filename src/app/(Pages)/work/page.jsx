@@ -179,14 +179,14 @@ const work = () => {
                 >
                   {filteredProjects.map((project) => (
                     <SwiperSlide key={project.id} className="h-full">
-                      <div className="h-full custom-border p-2 rounded-2xl overflow-hidden flex flex-col">
+                      <div className="h-[500px] custom-border p-2 rounded-2xl overflow-hidden flex flex-col">
                         <img
                           src={project.image}
                           alt={project.title}
                           className="w-full h-40 object-cover"
                         />
 
-                        <div className="p-3 flex-1 flex flex-col h-30">
+                        <div className="p-3 flex-1 flex flex-col h-30 h-full justify-evenly">
                           {/* heading  */}
                           <div>
                             <h3 className="h3">{project.title}</h3>
@@ -196,7 +196,7 @@ const work = () => {
                             <p className=" flex-1 p">{project.description}</p>
                           </div>
                           {/* Tech Stack  */}
-                          <div className="flex flex-wrap gap-2">
+                          <div className="flex flex-wrap gap-2 p">
                             {project.tech.map((tech, i) => (
                               <span
                                 key={i}
@@ -207,12 +207,12 @@ const work = () => {
                             ))}
                           </div>
                           {/* Buttons  */}
-                          <div className="flex flex-wrap gap-3 mt-auto p">
+                          <div className="grid md:grid-cols-2 p gap-2 w-full">
                             {project.link && (
                               <a
                                 href={project.link}
                                 target="_blank"
-                                className=" flex-1 text-center bg-primary py-3 rounded-xl transition"
+                                className=" flex-1 text-center bg-primary  btn rounded-xl"
                               >
                                 Live Preview
                               </a>
@@ -222,7 +222,7 @@ const work = () => {
                             <a
                               href={project.github || "#"}
                               target={project.github ? "_blank" : undefined}
-                              className="flex-1 text-center border py-3 rounded-xl  transition flex items-center justify-center gap-2"
+                              className="flex-1 flex btn  border"
                             >
                               <FaGithub className="text-lg" />
                               View Code
