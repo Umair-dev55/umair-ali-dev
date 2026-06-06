@@ -11,6 +11,7 @@ const HeroImageCard = () => {
         <Image
           src="/assets/png.png"
           alt="image"
+          sizes="h-full"
           fill
           quality={75}
           className="rounded-full object-cover"
