@@ -64,7 +64,10 @@ const about = () => {
 
         {/* 1st div (Hero Image) - Show second on mobile */}
         <div className="flex flex-col gap-8 justify-center py-10 order-2 sm:order-1 ">
-          <HeroImageCard />
+          <div className="scale-x-[-1]">
+            <HeroImageCard />
+          </div>
+
           <div>
             {/* Socials */}
             <div className="xl:absolute xl:p-5 top-1/2 right-0 transform -translate-y-1/2">
