@@ -55,7 +55,7 @@ const projects = [
     image: "/assets/work/thumb4.png",
     link: "/",
     github: "https://github.com/yourusername/saas-landing",
-    tech: ["React", "Tailwind CSS", "Framer Motion"],
+    tech: ["React", "Tailwind", "Framer Motion"],
   },
   {
     id: 5,
@@ -186,10 +186,10 @@ const work = () => {
                           className="w-full h-40 object-cover"
                         />
 
-                        <div className="p-3 flex-1 flex flex-col h-30 h-full justify-evenly">
+                        <div className="p-3 flex-1 flex flex-col h-30 h-full justify-evenly *:mb-3">
                           {/* heading  */}
                           <div>
-                            <h3 className="h3">{project.title}</h3>
+                            <h3 className="h3 ">{project.title}</h3>
                           </div>
                           {/* paragraph  */}
                           <div>
@@ -207,7 +207,7 @@ const work = () => {
                             ))}
                           </div>
                           {/* Buttons  */}
-                          <div className="grid md:grid-cols-2 p gap-2 w-full">
+                          <div className="grid md:grid-cols-2 p gap-2 w-full mb-0">
                             {project.link && (
                               <a
                                 href={project.link}
@@ -224,7 +224,7 @@ const work = () => {
                               target={project.github ? "_blank" : undefined}
                               className="flex-1 flex btn  border"
                             >
-                              <FaGithub className="text-lg" />
+                              <FaGithub className="p" />
                               View Code
                             </a>
                           </div>
