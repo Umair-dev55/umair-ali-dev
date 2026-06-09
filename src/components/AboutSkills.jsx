@@ -33,7 +33,7 @@ const skills = [
 const AboutSkills = () => {
   return (
     <div className="w-full max-w-75 sm:max-w-120 ">
-      <div className="text-center mb-8">
+      <div className="text-center my-12">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">
           Core Skills
         </h2>

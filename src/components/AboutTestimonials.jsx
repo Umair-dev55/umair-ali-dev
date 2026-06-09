@@ -58,7 +58,7 @@ const AboutTestimonials = () => {
   ];
   return (
     <div>
-      <div className="mb-8 text-center p-4">
+      <div className="my-12 text-center p-4">
         <h2 className="h2 font-bold"> Trusted By Clients </h2>
         <p className="para mt-2">
           Feedback from clients on project quality, communication, and delivery.
